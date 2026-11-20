@@ -1,7 +1,8 @@
 # Puzzle Nook
 
 Android app (Kotlin, Jetpack Compose), 31 logic puzzles for phone (S22 Ultra, S Pen) and colour
-e-ink tablet (Boox Note Air 5C). Package `com.puzzlenook`, single `app` module. Not a git repo.
+e-ink tablet (Boox Note Air 5C). Package `com.puzzlenook`, single `app` module. Public on GitHub
+(`OBELIKS/PuzzleNook`, GPL-3.0, `README.md`); repo-local git identity uses the GitHub noreply email.
 
 ## Commands (PowerShell)
 - First: `$env:JAVA_HOME='C:\Program Files\Java\jdk-21.0.12'`
