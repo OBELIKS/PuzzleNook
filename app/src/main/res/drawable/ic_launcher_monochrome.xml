@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Themed-icon layer (Android 13+): piece silhouette with the grid cut out. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:fillType="evenOdd"
+        android:pathData="M25.6,38.4 L43.6,38.4 A7,7 0 1,1 51.6,38.4 L69.6,38.4 L69.6,56.4 A7,7 0 1,1 69.6,64.4 L69.6,82.4 L51.6,82.4 A7,7 0 1,0 43.6,82.4 L25.6,82.4 L25.6,64.4 A7,7 0 1,0 25.6,56.4 Z M41.6,54.4 L53.6,54.4 L53.6,66.4 L41.6,66.4 Z" />
+</vector>

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Puzzle Nook</string>
+
+    <!-- Common words and actions -->
+    <string name="action_back">Back</string>
+    <string name="action_how_to_play">How to play</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_statistics">Statistics</string>
+    <string name="action_got_it">Got it</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_reset">Reset</string>
+    <string name="action_menu">Menu</string>
+    <string name="action_new_game">New game</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_pause">Pause</string>
+    <string name="action_resume">Resume</string>
+    <string name="paused_title">Paused</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_erase">Erase</string>
+    <string name="notes_on">Notes on</string>
+    <string name="notes_off">Notes off</string>
+    <string name="errors_on">Errors on</string>
+    <string name="errors_off">Errors off</string>
+    <string name="mode_fill">Fill</string>
+    <string name="mode_mark_empty">Mark empty</string>
+    <string name="mode_mark_white">Mark white</string>
+    <string name="mode_cross_out">Cross out</string>
+    <string name="mode_line">Line</string>
+    <string name="mode_wall">Wall</string>
+    <string name="mode_shade">Shade</string>
+    <string name="mode_star">Star</string>
+    <string name="mode_black">Black</string>
+    <string name="mode_white">White</string>
+    <string name="mode_sea">Sea</string>
+    <string name="mode_island">Island</string>
+
+    <!-- Difficulty levels -->
+    <string name="difficulty_easy">Easy</string>
+    <string name="difficulty_medium">Medium</string>
+    <string name="difficulty_hard">Hard</string>
+    <string name="difficulty_expert">Expert</string>
+
+    <!-- Game names -->
+    <string name="title_classic">Sudoku</string>
+    <string name="title_killer">Killer Sudoku</string>
+    <string name="title_kakuro">Kakuro</string>
+    <string name="title_nonogram">Nonogram</string>
+    <string name="title_futoshiki">Futoshiki</string>
+    <string name="title_calcudoku">Calcudoku</string>
+    <string name="title_skyscrapers">Skyscrapers</string>
+    <string name="title_star_battle">Star Battle</string>
+    <string name="title_hitori">Hitori</string>
+    <string name="title_nurikabe">Nurikabe</string>
+    <string name="title_slitherlink">Slitherlink</string>
+    <string name="title_hidato">Hidato</string>
+    <string name="title_takuzu">Takuzu</string>
+    <string name="title_mosaic">Mosaic</string>
+    <string name="title_light_up">Light Up</string>
+    <string name="blurb_light_up">Light every cell without bulbs seeing each other</string>
+    <string name="summary_light_up">Place bulbs so every white cell is lit, no two bulbs see each other, and numbered walls get their bulbs.</string>
+    <string name="rule_light_up">Light every white cell · bulbs never see each other · a number counts the bulbs next to its wall</string>
+    <string name="mode_bulb">Bulb</string>
+    <string name="mode_no_bulb">No bulb</string>
+    <string-array name="rules_light_up">
+        <item>Place bulbs in white cells. A bulb lights its row and its column up to the next black wall.</item>
+        <item>Every white cell must be lit, and no bulb may be lit by another bulb.</item>
+        <item>A number on a wall says exactly how many bulbs touch that wall, above, below, left or right. Walls without a number can have any count.</item>
+        <item>Tip: a 4 has bulbs on all four sides, and a 0 has none; a cell that only one spot can light must hold a bulb there.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string name="controls_shade_tap_light_up">Tap a cell to place a bulb; tap it again to remove it. Lit cells get a tint.</string>
+    <string name="controls_shade_mode_light_up">Switch to \"No bulb\" to mark cells with a dot where you know there is no bulb.</string>
+    <string name="title_tents">Tents</string>
+    <string name="blurb_tents">Pair every tree with a tent, counts outside</string>
+    <string name="summary_tents">Place a tent next to every tree, one tent per tree, so no two tents touch and each row and column has the number of tents shown outside.</string>
+    <string name="rule_tents">One tent next to every tree · tents never touch, not even diagonally · numbers outside count the tents per line</string>
+    <string name="mode_tent">Tent</string>
+    <string name="mode_no_tent">No tent</string>
+    <string-array name="rules_tents">
+        <item>Every tree has exactly one tent next to it, above, below, left or right. Every tent belongs to exactly one tree.</item>
+        <item>Tents never touch each other, not even diagonally.</item>
+        <item>The numbers outside the grid say how many tents are in that row or column. A missing number means no hint for that line.</item>
+        <item>Tip: a cell with no tree beside it can never hold a tent; a tree with only one free neighbour must have its tent there.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string name="controls_shade_tap_tents">Tap a cell to place a tent; tap it again to remove it. Taps on the numbers outside do nothing.</string>
+    <string name="controls_shade_mode_tents">Switch to \"No tent\" to mark cells with a dot where you know there is no tent.</string>
+    <string name="controls_shade_last_tents">A number turns grey once its line has the right number of tents. With Errors on, tents that touch and wrong marks show in red.</string>
+    <string name="title_kurodoko">Kurodoko</string>
+    <string name="title_masyu">Masyu</string>
+    <string name="blurb_kurodoko">Numbers count the cells they can see</string>
+    <string name="blurb_masyu">One loop through every pearl</string>
+    <string name="summary_kurodoko">Shade cells so every number sees exactly that many white cells in its row and column, shaded cells never touch and the white cells stay connected.</string>
+    <string name="summary_masyu">Draw one closed loop through the centres of the cells that passes through every pearl: it turns on a black pearl and goes straight on both sides, it goes straight through a white pearl and turns next to it.</string>
+    <string name="rule_kurodoko">A number counts the white cells it sees in its row and column, itself included · shaded cells never touch · white cells stay connected</string>
+    <string name="rule_masyu">One loop through every pearl · black: turn here, straight on both sides · white: straight through, turn in a cell next to it</string>
+    <string-array name="rules_kurodoko">
+        <item>A number is a white cell. It counts itself and every white cell it can see straight up, down, left and right, until a shaded cell or the edge.</item>
+        <item>Shaded cells never touch each other above, below, left or right.</item>
+        <item>All white cells must form one connected area.</item>
+        <item>Tip: a cell next to a shaded cell is white; a 1 has shaded cells on all sides, and a view that is too short or too long fixes cells next to the number.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string name="controls_shade_tap_kurodoko">Tap a cell to shade it; tap it again to clear it. Numbers can\'t be shaded.</string>
+    <string name="controls_shade_mode_kurodoko">Switch to \"Mark white\" to dot cells you know stay white.</string>
+    <string name="controls_shade_last_kurodoko">A number turns grey when it sees exactly that many cells with your current shading. With Errors on, shaded cells that touch and wrong marks show in red.</string>
+    <string name="controls_shade_last_light_up">A number turns grey once its wall has the right bulbs and the other sides are marked. With Errors on, bulbs that see each other and wrong marks show in red.</string>
+    <string name="title_norinori">Norinori</string>
+    <string name="blurb_norinori">Two dominoes of shading in every region</string>
+    <string name="summary_norinori">Shade exactly two cells in every region so that every shaded cell touches exactly one other shaded cell: the shaded cells form dominoes, which may cross region borders.</string>
+    <string name="rule_norinori">Shade two cells in every region · every shaded cell touches exactly one other shaded cell</string>
+    <string-array name="rules_norinori">
+        <item>Shade exactly two cells in every region (the areas with thick borders).</item>
+        <item>Every shaded cell must touch exactly one other shaded cell, above, below, left or right. So the shaded cells form dominoes of two cells.</item>
+        <item>A domino may lie inside one region or cross the border between two regions.</item>
+        <item>Tip: a region with two cells is shaded completely; a cell next to a finished domino stays white.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing. Some cells may be given from the start.</item>
+    </string-array>
+    <string name="controls_shade_tap_norinori">Tap a cell to shade it; tap it again to clear it. Given cells can\'t be changed.</string>
+    <string name="controls_shade_mode_norinori">Switch to \"Mark white\" to dot cells you know stay white.</string>
+    <string name="controls_shade_last_norinori">With Errors on, shaded cells that touch two others, regions with more than two shaded cells and wrong marks show in red.</string>
+    <string name="title_battleships">Battleships</string>
+    <string name="blurb_battleships">Find the fleet from the counts outside</string>
+    <string name="summary_battleships">Place the whole fleet in the grid: ships are straight, never touch each other, not even diagonally, and each row and column holds the number of ship cells shown outside. Some cells are shown from the start.</string>
+    <string name="rule_battleships">Place the fleet · ships never touch, not even diagonally · numbers outside count the ship cells per line</string>
+    <string name="mode_ship">Ship</string>
+    <string name="mode_water">Water</string>
+    <string-array name="rules_battleships">
+        <item>Find all the ships of the fleet shown above the grid. A ship is a straight line of cells, one cell long or more, lying across or down.</item>
+        <item>Ships never touch each other, not even diagonally, so every ship is surrounded by water.</item>
+        <item>The numbers outside the grid say how many ship cells are in that row or column.</item>
+        <item>Cells shown from the start are fixed: a round end tells which way the ship goes, a square one is a ship cell in the middle, and a dot is water.</item>
+        <item>Tip: a ship cell has water on all four diagonals; a line with no ship cells is all water. Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string name="controls_shade_tap_battleships">Tap a cell to place a ship cell; tap it again to remove it. Taps on the numbers outside do nothing, and shown cells can\'t be changed.</string>
+    <string name="controls_shade_mode_battleships">Switch to \"Water\" to dot cells you know are water. A correct ship cell dots its four diagonals for you.</string>
+    <string name="controls_shade_last_battleships">A number turns grey once its line has the right number of ship cells. A ship in the fleet list turns grey with a tick when you have drawn it and marked water at both ends. With Errors on, ship cells that touch wrongly and wrong marks show in red.</string>
+    <string name="title_aquarium">Aquarium</string>
+    <string name="blurb_aquarium">Fill the tanks, counts outside</string>
+    <string name="summary_aquarium">Fill the tanks with water so that each row and column holds the number of water cells shown outside. In a tank the water lies flat: a water cell means every cell of that tank in the same row and below is water too.</string>
+    <string name="rule_aquarium">Fill the tanks · water lies flat and fills from the bottom · numbers outside count the water cells per line</string>
+    <string name="mode_water_fill">Water</string>
+    <string name="mode_air">Air</string>
+    <string-array name="rules_aquarium">
+        <item>The grid is split into tanks by thick borders. Every tank holds water up to one level and nothing above it.</item>
+        <item>If a cell holds water, every cell of that tank in the same row and every cell below it holds water too.</item>
+        <item>The numbers outside the grid say how many cells of that row or column hold water. A missing number means no hint for that line.</item>
+        <item>Tip: a line whose count equals its length is all water; a count of 0 means all air.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing. Some cells may be given from the start.</item>
+    </string-array>
+    <string name="controls_shade_tap_aquarium">Tap a cell to fill it with water; tap it again to clear it. Taps on the numbers outside do nothing.</string>
+    <string name="controls_shade_mode_aquarium">Switch to \"Air\" to dot cells you know hold no water.</string>
+    <string name="controls_shade_last_aquarium">A number turns grey once its line has the right number of water cells. With Errors on, water above air in a tank and wrong marks show in red.</string>
+    <string name="title_heyawake">Heyawake</string>
+    <string name="blurb_heyawake">Shade cells in rooms, keep the white connected</string>
+    <string name="summary_heyawake">Shade some cells so that each room with a number holds exactly that many shaded cells. Shaded cells never touch along a side, all white cells stay connected, and no straight line of white cells runs through three rooms.</string>
+    <string name="rule_heyawake">Numbers count shaded cells · no touching · white stays connected · no white line through three rooms</string>
+    <string-array name="rules_heyawake">
+        <item>The grid is split into rectangular rooms by thick borders. A number in a room tells how many of its cells are shaded; a room without a number can hold any amount.</item>
+        <item>Shaded cells never touch each other above, below, left or right.</item>
+        <item>All white cells form one connected area.</item>
+        <item>A straight line of white cells, across or down, may never run through three rooms: it must not cross two room borders without meeting a shaded cell.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing. Some cells may be given from the start.</item>
+    </string-array>
+    <string name="controls_shade_tap_heyawake">Tap a cell to shade it; tap it again to clear it. Given cells can\'t be changed.</string>
+    <string name="controls_shade_mode_heyawake">Switch to \"Mark white\" to dot cells you know stay white.</string>
+    <string name="controls_shade_last_heyawake">A room number turns grey once the room has that many shaded cells. With Errors on, shaded cells that touch, a room with too many shaded cells and wrong marks show in red.</string>
+    <string name="title_lits">LITS</string>
+    <string name="blurb_lits">One tetromino in every region</string>
+    <string name="summary_lits">Shade exactly one tetromino, a shape of four joined cells, in every region. All shaded cells form one connected area, no 2×2 square is fully shaded, and two tetrominoes of the same shape, turned or flipped, never touch along a side.</string>
+    <string name="rule_lits">One tetromino per region · shaded cells connected, no 2×2 square · equal shapes never touch</string>
+    <string-array name="rules_lits">
+        <item>The grid is split into regions by thick borders. Shade exactly four joined cells in every region: they form an L, I, T or S shape (a tetromino).</item>
+        <item>All shaded cells form one connected area.</item>
+        <item>No 2×2 square may be fully shaded.</item>
+        <item>Two tetrominoes with the same shape, turned or flipped, may not touch along a side. Tetrominoes of different shapes may.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing. Some cells may be given from the start.</item>
+    </string-array>
+    <string name="title_fillomino">Fillomino</string>
+    <string name="blurb_fillomino">Write numbers so every area has its own size</string>
+    <string name="summary_fillomino">Write a number in every cell so that each group of touching equal numbers has exactly that many cells. Two groups of the same size never touch.</string>
+    <string name="rule_fillomino">Each group of touching equal numbers has that many cells · groups of the same size never touch</string>
+    <string-array name="rules_fillomino">
+        <item>Write a number from 1 to 9 in every cell.</item>
+        <item>A number tells how big its area is: touching cells with the same number form an area, and that area has exactly that many cells. A 3 belongs to an area of three cells, a 1 stands alone.</item>
+        <item>Two areas of the same size never touch along a side, so touching equal numbers always belong to the same area. Thick lines show where touching cells hold different numbers.</item>
+        <item>Tip: an area that is still too small and has only one free neighbour must grow into it. A number can only stand where enough free cells join up to make an area of its size.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string name="controls_shade_tap_lits">Tap a cell to shade it; tap it again to clear it. Given cells can\'t be changed.</string>
+    <string name="controls_shade_mode_lits">Switch to \"Mark white\" to dot cells you know stay white.</string>
+    <string name="controls_shade_last_lits">With Errors on, a 2×2 shaded square, a region with more than four shaded cells, equal tetrominoes that touch and wrong marks show in red.</string>
+    <string name="title_shikaku">Shikaku</string>
+    <string name="blurb_shikaku">Divide the grid into rectangles</string>
+    <string name="summary_shikaku">Divide the grid into rectangles so that each one holds exactly one number, and that number is its area.</string>
+    <string name="rule_shikaku">Divide the grid into rectangles · each holds one number · the number is its area</string>
+    <string-array name="rules_shikaku">
+        <item>Divide the whole grid into rectangles. Every cell belongs to exactly one rectangle.</item>
+        <item>Every rectangle contains exactly one number, and that number is the number of cells in the rectangle.</item>
+        <item>Tip: a number that fits only one rectangle can be drawn at once; a cell that only one number can reach belongs to that number.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="controls_shikaku">
+        <item>Drag from one cell to the opposite corner to draw a rectangle. A preview shows while you drag; it is placed when you lift your finger or pen.</item>
+        <item>A new rectangle replaces any rectangle it overlaps.</item>
+        <item>Tap inside a rectangle to remove it. Tap a lone 1 to draw its single cell.</item>
+        <item>A number turns grey when its rectangle has the right size around only that number. With Errors on, a rectangle that is not part of the solution shows in red.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="title_galaxies">Galaxies</string>
+    <string name="blurb_galaxies">Split the grid into symmetric galaxies</string>
+    <string name="summary_galaxies">Draw walls along the grid lines to split the board into areas: each area holds exactly one dot and looks the same when turned half a turn around that dot.</string>
+    <string name="rule_galaxies">Draw walls on grid lines · each area holds one dot · half a turn around its dot, the area looks the same</string>
+    <string name="loading_galaxies">Drawing the galaxies…</string>
+    <string-array name="rules_galaxies">
+        <item>Draw walls along the grid lines to divide the whole board into areas. The outer border is already a wall.</item>
+        <item>Every area contains exactly one dot, and the dot is the centre of the area: turn the area half a turn around its dot and it covers itself exactly.</item>
+        <item>A dot on a line or a corner belongs to all the cells around it, so no wall may run through a dot.</item>
+        <item>Tip: if a cell belongs to a dot, the cell opposite it on the other side of the dot belongs to it as well. A cell that can\'t be joined to a dot without a wall in the way, or whose mirror cell is outside the board or taken by another dot, can\'t belong to that dot.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="controls_galaxies">
+        <item>Tap near a grid line to draw a wall there; tap it again to remove it.</item>
+        <item>Or drag from corner to corner to draw several walls in one stroke. Starting on a wall erases instead.</item>
+        <item>Switch to \"Cross out\" to put an ✕ on lines you know are not walls. ✕ marks are optional.</item>
+        <item>An area you have closed off with one dot and the right symmetry gets a tint. With Errors on, a wall that is not part of the solution shows in red.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="title_yajilin">Yajilin</string>
+    <string name="blurb_yajilin">Shade cells, loop through the rest</string>
+    <string name="summary_yajilin">Shade some cells so that no two touch, then draw one closed loop through the centres of all the other cells that are not arrows: an arrow says how many cells in its direction are shaded.</string>
+    <string name="rule_yajilin">An arrow counts the shaded cells that way · shaded cells never touch · one loop through every other cell</string>
+    <string-array name="rules_yajilin">
+        <item>Some cells hold an arrow and a number. The number tells how many cells in the arrow\'s direction, to the border of the board, are shaded. Arrow cells are never shaded and the loop never enters them.</item>
+        <item>Shaded cells never touch each other along a side.</item>
+        <item>Draw one single closed loop through the centres of the cells, joining neighbouring cells with lines. It never crosses or touches itself and never branches.</item>
+        <item>Every cell that is neither an arrow cell nor shaded lies on the loop.</item>
+        <item>Tip: a cell next to a shaded cell is on the loop; a cell in a corner or beside arrow cells that has fewer than two ways out must be shaded; a loop may not close up before it has passed through every cell.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="controls_yajilin">
+        <item>In Shade mode tap a cell to shade it, tap again for a dot (not shaded), and once more to clear it. Drag across cells to do the same to a whole stroke.</item>
+        <item>Switch to \"Line\" to draw the loop: tap between two cells to draw a line there, or drag from cell to cell. Starting on a line erases instead.</item>
+        <item>An arrow turns grey once the cells you shaded match its number. With Errors on, an arrow with too many shaded cells, shaded cells that touch and anything that is not part of the solution show in red.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="title_bridges">Bridges</string>
+    <string name="blurb_bridges">Connect the islands with bridges</string>
+    <string name="summary_bridges">Connect all islands with horizontal and vertical bridges: each island has as many bridges as its number, at most two run between a pair and bridges never cross.</string>
+    <string name="rule_bridges">Connect all islands · a number is its bridge count · at most two bridges between a pair · no crossings</string>
+    <string-array name="rules_bridges">
+        <item>Connect the islands with straight, horizontal or vertical bridges.</item>
+        <item>Every island has exactly as many bridges as its number.</item>
+        <item>At most two bridges run between the same two islands, and bridges never cross each other or an island.</item>
+        <item>All islands must end up connected into one group.</item>
+        <item>Tip: a 4 with only two neighbours needs two bridges to each; two islands that would close off a group on their own can\'t be joined.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="controls_bridges">
+        <item>Drag from an island towards a neighbouring island to add a bridge: one bridge, then two, then none again.</item>
+        <item>Tap a bridge to cycle it the same way. A bridge that would cross another does nothing.</item>
+        <item>An island turns pale when it has all its bridges. With Errors on, a bridge the solution doesn\'t have, and an island with too many bridges, show in red.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="title_jigsaw">Jigsaw Sudoku</string>
+    <string name="title_suguru">Suguru</string>
+
+    <!-- Home -->
+    <string name="home_tagline">A cozy corner for logic puzzles</string>
+    <string name="section_numbers">Numbers</string>
+    <string name="section_shading">Shading</string>
+    <string name="section_lines">Lines and paths</string>
+    <string name="section_regions">Regions</string>
+    <string name="home_continue">Continue: %1$s · %2$s</string>
+    <string name="blurb_classic">Classic 9×9 number logic</string>
+    <string name="blurb_killer">Sudoku with cage sums</string>
+    <string name="blurb_jigsaw">Sudoku with irregular regions</string>
+    <string name="blurb_suguru">Regions of 1 to 5, equal digits never touch</string>
+    <string name="blurb_kakuro">Number crossword of sums</string>
+    <string name="blurb_futoshiki">Number square with &lt; and &gt; signs</string>
+    <string name="blurb_calcudoku">Cages with + − × ÷ targets</string>
+    <string name="blurb_skyscrapers">Count the buildings in view</string>
+    <string name="blurb_nonogram">Picture logic with number clues</string>
+    <string name="blurb_star_battle">Stars in every row, column and region</string>
+    <string name="blurb_hitori">Shade away the repeated numbers</string>
+    <string name="blurb_nurikabe">Islands in a connected sea</string>
+    <string name="blurb_takuzu">Black and white circles, never three alike</string>
+    <string name="blurb_mosaic">Numbers count shaded neighbours</string>
+    <string name="blurb_slitherlink">One loop around the numbers</string>
+    <string name="blurb_hidato">A path of numbers through every cell</string>
+
+    <!-- Game menu -->
+    <string name="menu_saved_detail">%1$s · %2$s</string>
+    <string name="menu_new_game_heading">New game</string>
+    <string name="menu_best">Best: %1$s</string>
+    <string name="menu_no_best">No best yet</string>
+    <string name="menu_solved">Solved: %1$d</string>
+    <string name="menu_replace_title">Start a new game?</string>
+    <string name="menu_replace_text">Your current game (%1$s) will be lost.</string>
+    <string name="menu_start_difficulty">Start: %1$s</string>
+    <string name="detail_kakuro">%1$d×%1$d cells</string>
+    <string name="detail_nonogram">%1$d×%1$d picture</string>
+    <string name="detail_grid">%1$d×%1$d grid</string>
+    <string name="detail_squares">%1$d×%1$d squares</string>
+    <string name="detail_hidato">%1$d×%1$d grid, 1 to %2$d</string>
+    <plurals name="detail_killer">
+        <item quantity="one">Cages up to %1$d cell</item>
+        <item quantity="other">Cages up to %1$d cells</item>
+    </plurals>
+    <plurals name="detail_star_battle">
+        <item quantity="one">%1$d×%1$d grid, %2$d star each</item>
+        <item quantity="other">%1$d×%1$d grid, %2$d stars each</item>
+    </plurals>
+    <plurals name="detail_calcudoku">
+        <item quantity="one">%1$d×%1$d grid, cages up to %2$d cell</item>
+        <item quantity="other">%1$d×%1$d grid, cages up to %2$d cells</item>
+    </plurals>
+    <string name="summary_classic">Fill the grid so every row, column and 3×3 box holds 1 to 9.</string>
+    <string name="summary_killer">Sudoku where dashed cages show the sum of their digits.</string>
+    <string name="summary_jigsaw">Sudoku where the 3×3 boxes are replaced by irregular regions.</string>
+    <string name="summary_suguru">Fill each region with 1 up to its size; equal digits never touch, even diagonally.</string>
+    <string name="summary_kakuro">A crossword of numbers: every run adds up to its clue.</string>
+    <string name="summary_nonogram">Fill cells to match the number clues and reveal a picture.</string>
+    <string name="summary_futoshiki">A small number square with &lt; and &gt; signs between cells.</string>
+    <string name="summary_calcudoku">Cages show a target and a sum, difference, product or quotient.</string>
+    <string name="summary_skyscrapers">Digits are building heights; edge clues count the buildings you see.</string>
+    <string name="summary_star_battle">Place stars so every row, column and region has the same number, none touching.</string>
+    <string name="summary_hitori">Shade repeated numbers away; shaded cells never touch and the white ones stay linked.</string>
+    <string name="summary_nurikabe">Shade the sea around numbered islands: one connected sea, no 2×2 pools.</string>
+    <string name="summary_slitherlink">Draw one closed loop along the dots; each number counts its sides on the loop.</string>
+    <string name="summary_hidato">Fill the grid with a path of numbers, each touching the next.</string>
+    <string name="summary_takuzu">Fill the grid with black and white circles: never three alike in a row, and every line balanced.</string>
+    <string name="summary_mosaic">Shade cells so every number matches the shaded cells around it.</string>
+
+    <!-- Game screens -->
+    <string name="status_mistakes">Mistakes: %1$d</string>
+    <string name="status_mistakes_hidden">Mistakes: –</string>
+    <string name="status_hints">Hints: %1$s</string>
+    <string name="status_time_penalty">Time +%1$d%%</string>
+    <string name="hint_reveal">Reveal %1$s</string>
+    <string name="hint_none_left">No hints</string>
+    <string name="hint_cost">Hint %1$s</string>
+    <plurals name="hint_with_left">
+        <item quantity="one">%1$s\n%2$d left</item>
+        <item quantity="other">%1$s\n%2$d left</item>
+    </plurals>
+    <string name="loading_numbers">Arranging the numbers…</string>
+    <string name="loading_grid">Setting up the grid…</string>
+    <string name="loading_picture">Drawing a picture…</string>
+    <string name="loading_loop">Drawing a loop…</string>
+    <string name="loading_path">Laying out a path…</string>
+    <string name="hidato_still_to_place">Still to place: %1$s</string>
+    <string name="flash_unreadable">Couldn\'t read that — try again</string>
+    <string name="flash_digit_range">Only 1–%1$d in this puzzle</string>
+    <string name="flash_nothing_to_delete">Nothing to delete here</string>
+    <string name="flash_erase_first">Erase the number first to add notes</string>
+
+    <!-- Win dialog -->
+    <string name="win_title">Solved!</string>
+    <string name="win_playing_time">Playing time: %1$s</string>
+    <string name="win_mistakes_hints">Mistakes: %1$d (½ point each) · Hints: %2$s</string>
+    <string name="win_penalty_off">Time penalty is off</string>
+    <string name="win_penalty">Penalty points: %1$s × %2$d%% = +%3$d%% (+%4$s)</string>
+    <string name="win_final_time">Final time: %1$s</string>
+    <string name="win_final_time_best">Final time: %1$s · new best!</string>
+
+    <!-- Settings -->
+    <string name="settings_language">Language</string>
+    <string name="language_system">Follow system</string>
+    <string name="language_english" translatable="false">English</string>
+    <string name="language_slovene" translatable="false">Slovenščina</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_eink">E-ink</string>
+    <string name="theme_eink_description">Black &amp; white, no animations — for Boox and other e-ink screens</string>
+    <string name="settings_number_colours">Number colours</string>
+    <string name="settings_number_colours_description">Tuned for colour e-ink such as the Boox Note Air 5C. Starting numbers always stay black.</string>
+    <string name="settings_your_answers">Your answers</string>
+    <string name="settings_notes">Notes</string>
+    <string name="ink_theme">Theme</string>
+    <string name="ink_blue">Blue</string>
+    <string name="ink_red">Red</string>
+    <string name="ink_green">Green</string>
+    <string name="ink_orange">Orange</string>
+    <string name="ink_purple">Purple</string>
+    <string name="ink_teal">Teal</string>
+    <string name="ink_magenta">Magenta</string>
+    <string name="ink_brown">Brown</string>
+    <string name="ink_grey">Grey</string>
+    <string name="settings_penalty">Time penalty</string>
+    <string name="settings_penalty_description">Each mistake is ½ point and each hint step ½ point. When you finish, every point adds the share of your playing time chosen here to the final time. Applies to all games, including the one in progress.</string>
+    <string name="penalty_off">Off</string>
+    <string name="penalty_choice">+%1$d%%</string>
+    <string name="settings_help">Help</string>
+    <string name="settings_help_description">Changes apply from the next new game.</string>
+    <string name="settings_hints_per_game">Hints per game</string>
+    <string name="hint_limit_unlimited">Unlimited</string>
+    <string name="hint_limit_none">None</string>
+    <string name="settings_rising_cost">Rising hint cost</string>
+    <string name="settings_rising_cost_description">Each further hint in a game costs more: ½, 1, 1½ …</string>
+    <string name="settings_wait_between_hints">Wait between hints</string>
+    <string name="cooldown_off">Off</string>
+    <string name="cooldown_seconds">%1$d s</string>
+    <string name="cooldown_minutes">%1$d min</string>
+    <string name="settings_handwriting">Handwriting</string>
+    <string name="settings_stylus">Write numbers with a stylus</string>
+    <string name="settings_stylus_description">Write straight into a cell with the S Pen or Boox pen. Fingers still tap to select.</string>
+    <string name="settings_small_notes">Small writing becomes a note</string>
+    <string name="settings_small_notes_description">Write a digit small (under about half the cell) to add it as a note; write it big for the answer.</string>
+    <string name="settings_recogniser">Recogniser</string>
+    <string name="recogniser_ready">Google handwriting model (on-device)</string>
+    <string name="recogniser_downloading">Downloading Google handwriting model… using built-in recogniser meanwhile</string>
+    <string name="recogniser_unavailable">Built-in recogniser (Google model unavailable on this device)</string>
+    <string name="settings_pen">Pen</string>
+    <string name="settings_pen_onyx">Onyx low-latency pen drawing</string>
+    <string name="settings_learned">Learned</string>
+    <string name="learned_none">Nothing yet. If a digit is misread, tap the right number on the keypad and the app learns your handwriting.</string>
+    <plurals name="learned_samples">
+        <item quantity="one">%1$d sample of your handwriting</item>
+        <item quantity="other">%1$d samples of your handwriting</item>
+    </plurals>
+    <string name="settings_forget_learned">Forget learned handwriting</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version</string>
+    <string name="version_value">%1$s (build %2$d)</string>
+    <string name="version_unknown">unknown</string>
+
+    <!-- Statistics -->
+    <string name="stats_reset_title">Reset statistics?</string>
+    <string name="stats_reset_text_game">Delete wins, best times and history for %1$s? This cannot be undone.</string>
+    <string name="stats_reset_text_all">Delete wins, best times and history for all games? This cannot be undone.</string>
+    <string name="stats_reset_description">Reset statistics</string>
+    <string name="stats_game_label">Game</string>
+    <string name="stats_all_games">All games</string>
+    <string name="stats_times_label">Times</string>
+    <string name="stats_penalty_none">Playing time only (no penalty)</string>
+    <string name="stats_penalty_percent">+%1$d%% per penalty point</string>
+    <string name="stats_your_setting">%1$s · your setting</string>
+    <string name="stats_nothing_played">Nothing played yet. Solve a puzzle and it shows up here.</string>
+    <string name="stats_note_no_penalty">Times are playing time only, without penalties for mistakes and hints.</string>
+    <string name="stats_note_penalty">Times are playing time plus %1$d%% of it for each penalty point (a mistake or a hint step is ½ point), as if this had been your setting for every game.</string>
+    <string name="stats_note_old_best">* Solved before version 0.7.1, when times weren\'t recorded in detail: the best time shown is the one saved then, with the penalty setting you had at the time.</string>
+    <string name="stats_solved">Solved</string>
+    <string name="stats_started">Started</string>
+    <string name="stats_finished">Finished</string>
+    <string name="stats_percent">%1$d%%</string>
+    <string name="stats_time_played">Time played</string>
+    <string name="stats_mistakes_per_game">Mistakes / game</string>
+    <string name="stats_hints_per_game">Hints / game</string>
+    <string name="stats_not_played">Not played yet</string>
+    <string name="stats_header_best">Best</string>
+    <string name="stats_header_average">Average</string>
+    <string name="stats_solved_of">%1$d of %2$d</string>
+    <string name="stats_clean_unaided">Clean: %1$d · best %2$s&#8195;Unaided: %3$d · best %4$s</string>
+    <string name="stats_recent_wins">Recent wins</string>
+    <plurals name="stats_recent_detail">
+        <item quantity="one">%1$s · %2$d mistake, hints %3$s</item>
+        <item quantity="other">%1$s · %2$d mistakes, hints %3$s</item>
+    </plurals>
+    <string name="stats_tag_unaided">unaided</string>
+    <string name="stats_tag_clean">clean</string>
+    <string name="stats_played_time">Played: %1$s</string>
+
+    <!-- How to play -->
+    <string name="how_title">How to play %1$s</string>
+    <string name="how_section_rules">Rules</string>
+    <string name="how_section_playing">Playing</string>
+    <string name="how_section_scoring">Hints and time</string>
+
+    <!-- One-line rules shown at the top of a game screen -->
+    <string name="rule_classic">Every row, column and 3×3 box holds 1 to 9 once</string>
+    <string name="rule_killer">Every row, column and 3×3 box holds 1 to 9 once · a cage\'s digits add up to its sum, none repeated</string>
+    <string name="rule_jigsaw">Every row, column and coloured region holds 1 to 9 once</string>
+    <string name="rule_suguru">A region of n cells holds 1 to n · equal digits never touch, not even diagonally</string>
+    <string name="rule_kakuro">Every run adds up to its clue · no digit twice in a run</string>
+    <string name="rule_futoshiki">Every row and column holds 1 to %1$d once · &lt; and &gt; point to the smaller number</string>
+    <string name="rule_calcudoku">Every row and column holds 1 to %1$d once · a cage\'s digits give its target with its + − × ÷</string>
+    <string name="rule_skyscrapers">Every row and column holds heights 1 to %1$d once · a clue counts the buildings seen from its side</string>
+    <string name="rule_nonogram">Clues are the runs of filled cells in each row and column, in order, with gaps between</string>
+    <plurals name="rule_star_battle">
+        <item quantity="one">%1$d star in every row, column and region · stars never touch, not even diagonally</item>
+        <item quantity="other">%1$d stars in every row, column and region · stars never touch, not even diagonally</item>
+    </plurals>
+    <string name="rule_takuzu">No three alike in a row · rows and columns half ● half ○ · no two lines the same</string>
+    <string name="rule_mosaic">Each number counts the shaded cells in its 3×3 block, itself included</string>
+    <string name="rule_hitori">No number twice among the white cells of a row or column · shaded cells never touch sideways · white cells stay connected</string>
+    <string name="rule_nurikabe">Each number is an island of that many cells · one connected sea, no 2×2 pools</string>
+    <string name="rule_slitherlink">Draw one closed loop along the dots · each number counts its sides on the loop</string>
+    <string name="rule_hidato">A path from 1 to the end · each number touches the next, sideways or diagonally</string>
+
+    <!-- Rules (bullets) -->
+    <string-array name="rules_hidato">
+        <item>Fill every cell so the numbers 1, 2, 3 … up to the number of cells form one path.</item>
+        <item>Each number touches the next one: side by side or diagonally.</item>
+        <item>Some numbers are given, always including the first and the last.</item>
+        <item>Tip: look for gaps with few cells between two given numbers, like 12 and 14 with only one cell touching both.</item>
+        <item>Tip: a corner cell has only three neighbours, so it\'s often the end of a short run.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_masyu">
+        <item>Draw a single closed loop through the centres of the cells, joining neighbouring cells with lines.</item>
+        <item>The loop never crosses or touches itself and never branches. It doesn\'t have to visit every cell.</item>
+        <item>The loop goes through every pearl.</item>
+        <item>On a black pearl the loop turns, and in both directions it goes straight on through the next cell before it may turn.</item>
+        <item>Through a white pearl the loop goes straight, and it turns in at least one of the two cells right before or after the pearl.</item>
+        <item>Tip: a black pearl can\'t point towards a border that is only one cell away, nor towards another black pearl: there is no room to go straight on.</item>
+        <item>Tip: with three white pearls in a row, the middle one is crossed the other way.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+        <string-array name="rules_slitherlink">
+        <item>Draw a single closed loop by joining neighbouring dots with lines.</item>
+        <item>The loop never crosses or touches itself and never branches: every dot has two lines or none.</item>
+        <item>A number tells how many of the four sides of its square are part of the loop. Squares without a number can have any.</item>
+        <item>Tip: a 0 has no lines around it, so mark its four sides with ✕.</item>
+        <item>Tip: a 3 in a corner of the grid takes both of the corner\'s outer sides.</item>
+        <item>Tip: two 3s side by side share a line between them, and their outer sides are lines too.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_mosaic">
+        <item>Shade some cells. A number tells how many cells are shaded in its 3×3 block: the cell itself and the cells around it (fewer at the edges and corners).</item>
+        <item>Cells without a number can be shaded or not, the numbers around them decide.</item>
+        <item>Tip: a 0 means its whole block stays white, and a 9 means all nine cells are shaded.</item>
+        <item>Tip: a 4 in a corner fills its whole block, and so does a 6 on an edge.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_takuzu">
+        <item>Fill every cell with a black or a white circle.</item>
+        <item>No more than two circles of the same colour may be side by side in a row or column.</item>
+        <item>Every row and every column holds as many black circles as white ones.</item>
+        <item>No two rows are the same, and no two columns are the same.</item>
+        <item>Tip: two equal circles side by side have the other colour at both ends; in a pattern like ● _ ● the gap is white.</item>
+        <item>Tip: once a row or column has half of its cells in one colour, all the rest are the other colour.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_star_battle">
+        <item>Place stars in the grid. The thick lines split it into regions.</item>
+        <item>Every row, every column and every region gets the same number of stars: 1 on Easy and Medium, 2 on Hard and Expert.</item>
+        <item>Stars never touch, not even diagonally.</item>
+        <item>Tip: once a row, column or region has its stars, mark the rest of it empty.</item>
+        <item>Tip: a small region squeezed into one row or column takes that line\'s star, so the rest of the line is empty.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_hitori">
+        <item>Shade cells so that no number appears twice among the white cells of a row or column.</item>
+        <item>Shaded cells never touch side by side (corners are fine).</item>
+        <item>All white cells stay connected in one group.</item>
+        <item>Only shade a number that repeats in its row or column.</item>
+        <item>Tip: of two equal neighbours, one is shaded, so every other copy in that line is shaded too.</item>
+        <item>Tip: in a pattern like 3 5 3, the middle number stays white.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_nurikabe">
+        <item>Each number is an island: that many white cells joined side by side, including the number.</item>
+        <item>Every island has exactly one number, and islands never touch side by side.</item>
+        <item>All other cells are sea. Shade them: the sea is one connected group.</item>
+        <item>The sea never forms a solid 2×2 block.</item>
+        <item>Tip: a cell between two numbered islands must be sea.</item>
+        <item>Tip: an island that has all its cells is surrounded by sea.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_classic">
+        <item>Fill every empty cell with a digit from 1 to 9.</item>
+        <item>Each row, each column and each 3×3 box must contain every digit exactly once.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_jigsaw">
+        <item>Fill every empty cell with a digit from 1 to 9.</item>
+        <item>Each row, each column and each of the nine thick-outlined regions must contain every digit exactly once.</item>
+        <item>The regions are irregular shapes of nine cells instead of 3×3 boxes.</item>
+        <item>Tip: a region is often long and thin, so a digit\'s place in it may be pinned down by a row or column.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_suguru">
+        <item>The thick lines split the grid into regions of 1 to 5 cells.</item>
+        <item>A region of k cells holds the digits 1 to k, each exactly once.</item>
+        <item>The same digit may never appear in two touching cells, not even diagonally.</item>
+        <item>Tip: in a region of two cells next to a 1, the other cell is often forced; look at the neighbours of every cell.</item>
+        <item>Tip: if a digit can only go in cells that all touch one outside cell, that cell can\'t hold it.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_killer">
+        <item>All the sudoku rules apply: every row, column and 3×3 box holds 1 to 9 once.</item>
+        <item>The dashed outlines are cages. The small number in a cage\'s corner is the sum of its digits.</item>
+        <item>A digit can\'t repeat inside a cage.</item>
+        <item>Harder levels have bigger cages and few or no starting numbers.</item>
+        <item>Tip: every row, column and box adds up to 45, so you can often work out a cell that sticks out of a box.</item>
+        <item>Tip: some sums have only one combination, e.g. 3 in two cells is 1 + 2 and 17 in two cells is 8 + 9.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_kakuro">
+        <item>Fill the white cells with digits from 1 to 9.</item>
+        <item>A run is an unbroken line of white cells, across or down. Its clue is in the dark square just before it.</item>
+        <item>In a dark square, the number at the top right is the sum of the run to its right; the number at the bottom left is the sum of the run below it.</item>
+        <item>A digit can\'t repeat inside a run, but it can repeat elsewhere in a row or column.</item>
+        <item>Tip: look for sums with only one combination: 3 = 1 + 2, 4 = 1 + 3, 16 = 7 + 9, 17 = 8 + 9 in two cells; 6 = 1 + 2 + 3 and 24 = 7 + 8 + 9 in three.</item>
+        <item>Some puzzles start with a few digits filled in.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_nonogram">
+        <item>Fill cells to reveal a hidden picture.</item>
+        <item>The numbers beside each row and above each column are the lengths of its blocks of filled cells, in order.</item>
+        <item>Blocks are separated by at least one empty cell. \"3 1\" means a block of three, a gap, then a single cell.</item>
+        <item>A row or column marked 0 stays empty. A clue turns pale once its row or column matches it.</item>
+        <item>Tip: in a row of 10, a block of 7 always covers the middle 4 cells, wherever it sits.</item>
+        <item>Every picture can be worked out one row or column at a time, without guessing.</item>
+    </string-array>
+    <string name="title_kropki">Kropki</string>
+    <string name="blurb_kropki">Number square with white and black dots</string>
+    <string name="summary_kropki">A number square where dots between cells show consecutive or double digits.</string>
+    <string name="rule_kropki">Every row and column holds 1 to %1$d once · white dot: consecutive · black dot: double · no dot: neither</string>
+    <string-array name="rules_kropki">
+        <item>On a grid of n×n cells, fill in 1 to n so every row and column holds each digit once. There are no boxes.</item>
+        <item>A white dot between two cells means their digits are consecutive, such as 3 and 4. A black dot means one digit is double the other, such as 3 and 6.</item>
+        <item>All dots are shown: two neighbours without a dot are neither consecutive nor double. A 1 and a 2 always get a white dot.</item>
+        <item>Tip: a 1 never touches a black dot, because its double 2 would get a white dot. A digit above n ÷ 2 next to a black dot is the bigger one.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_futoshiki">
+        <item>On a grid of n×n cells, fill in 1 to n so every row and column holds each digit once. There are no boxes.</item>
+        <item>A &lt; or &gt; sign between two cells must hold: it points at the smaller digit.</item>
+        <item>Tip: a cell bigger than its neighbour can\'t be 1; a cell smaller than another can\'t be n.</item>
+        <item>Tip: follow chains of signs. In a &lt; b &lt; c, a is at most n − 2 and c is at least 3.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_calcudoku">
+        <item>On a grid of n×n cells, fill in 1 to n so every row and column holds each digit once.</item>
+        <item>The thick outlines are cages. The label in a cage\'s corner gives a target and an operation: + sum, − difference, × product, ÷ quotient.</item>
+        <item>− and ÷ cages have two cells: take the bigger digit minus (or divided by) the smaller one.</item>
+        <item>A cage with just a number is a single cell holding that number.</item>
+        <item>A digit may repeat inside a cage, as long as the copies are in different rows and columns.</item>
+        <item>Tip: start with single cells and cages with few options, like 2÷ or a big − difference.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+    <string-array name="rules_skyscrapers">
+        <item>On a grid of n×n cells, fill in 1 to n so every row and column holds each digit once.</item>
+        <item>Each digit is the height of a building. Taller buildings hide shorter ones behind them.</item>
+        <item>A number outside the grid says how many buildings you see looking along that row or column from that side.</item>
+        <item>Tip: a clue of 1 means the tallest building (n) stands right next to it.</item>
+        <item>Tip: a clue of n means the row climbs 1, 2, 3 … n away from it.</item>
+        <item>Some puzzles start with a few digits filled in.</item>
+        <item>Every puzzle has exactly one solution and can be solved by logic, without guessing.</item>
+    </string-array>
+
+    <!-- Controls (bullets) -->
+    <string-array name="controls_hidato">
+        <item>Tap a cell, then type its number on the pad. A digit that can\'t start a bigger number goes in at once; otherwise type the second digit, or wait a moment.</item>
+        <item>With a pen (S Pen, Boox): write the number in the cell, one or two digits.</item>
+        <item>Write 0 to clear a cell. Tap the same number again to remove it.</item>
+        <item>Tap a number to highlight the numbers before and after it. Lines join numbers that follow each other.</item>
+        <item>The line under the pad lists numbers still to place.</item>
+    </string-array>
+    <string-array name="controls_masyu">
+        <item>Tap between two cells to draw a line there; tap it again to remove it.</item>
+        <item>Or drag from cell to cell to draw several lines in one stroke. Starting on a line erases instead.</item>
+        <item>Switch to \"Cross out\" to put an ✕ on edges you know the loop doesn\'t use. ✕ marks are optional.</item>
+        <item>A pearl turns pale once your lines satisfy it; with Errors on it turns red when your lines break its rule.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+        <string-array name="controls_slitherlink">
+        <item>Tap between two dots to draw a line there; tap it again to remove it.</item>
+        <item>Or drag from dot to dot to draw several lines in one stroke. Starting on a line erases instead.</item>
+        <item>Switch to \"Cross out\" to put an ✕ on edges you know the loop doesn\'t use. ✕ marks are optional.</item>
+        <item>A number turns pale once it has the right count of lines (a 0 once its four sides are crossed out); it turns red if it has too many.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="controls_shade_tap_star_battle">Tap a cell to place a star; tap it again to remove it.</string>
+    <string name="controls_shade_tap_hitori">Tap a cell to shade it; tap it again to clear it.</string>
+    <string name="controls_shade_tap_takuzu">Tap a cell for a black circle; tap again to clear.</string>
+    <string name="controls_shade_tap_mosaic">Tap a cell to shade it; tap it again to clear it.</string>
+    <string name="controls_shade_tap_nurikabe">Tap a cell to shade it as sea; tap it again to clear it.</string>
+    <string name="controls_shade_mode_star_battle">Switch to \"Mark empty\" to put a dot on cells without a star. A correct star dots its eight neighbours for you.</string>
+    <string name="controls_shade_mode_hitori">Switch to \"Mark white\" to circle numbers you know stay white.</string>
+    <string name="controls_shade_mode_takuzu">Switch to \"White\" for white circles.</string>
+    <string name="controls_shade_mode_mosaic">Switch to \"Mark white\" to circle cells you know stay white.</string>
+    <string name="controls_shade_mode_nurikabe">Switch to \"Island\" to put a dot on cells you know are land.</string>
+    <string name="controls_shade_drag">Drag along a row or column to mark several cells in one go. Works with a finger or a pen.</string>
+    <string name="controls_shade_last_takuzu">The puzzle is done when every cell has a circle. With Errors on, a wrong mark shows in red.</string>
+    <string name="controls_shade_last_mosaic">A number turns grey once its block is complete: the right cells shaded and the rest circled. With Errors on, a wrong mark shows in red.</string>
+    <string name="controls_shade_last_default">Dots and circles are optional, they just help you think. With Errors on, a wrong mark shows in red.</string>
+    <string-array name="controls_nonogram">
+        <item>Tap a cell to fill it. Tap a filled cell to clear it.</item>
+        <item>Drag along a row or column to fill several cells in one go.</item>
+        <item>Switch to \"Mark empty\" to put an ✕ on cells you know stay empty. ✕ marks are optional, they just help you think.</item>
+        <item>Works the same with a finger or a pen.</item>
+    </string-array>
+    <string name="controls_digits_first_latin">Tap a cell, then tap a number from 1 to n. Tap the same number again to remove it.</string>
+    <string name="controls_digits_first">Tap a cell, then tap a number. Tap the same number again to remove it.</string>
+    <string-array name="controls_digits">
+        <item>Notes: switch Notes on and tap numbers to pencil in candidates.</item>
+        <item>With a pen (S Pen, Boox): write a digit big for the answer, or small for a note.</item>
+        <item>Write a note\'s digit small again to remove it.</item>
+        <item>Write 0 to clear a cell; on an empty cell, a big 0 clears all its notes and a small 0 deletes just the nearest note.</item>
+        <item>If a digit is misread, tap the right number and the app learns your handwriting.</item>
+    </string-array>
+
+    <!-- Hints and time (bullets) -->
+    <string-array name="scoring_points">
+        <item>Hint, first press: a cell you can work out next is framed (½ point).</item>
+        <item>Hint, second press: its answer is shown (another ½ point).</item>
+        <item>Settings can limit the hints per game. The limit counts first presses; a framed cell can always be revealed. Changes apply to the next game.</item>
+        <item>Settings can make each further hint cost more: the first hint costs ½ point per press, the second 1, the third 1½ …</item>
+        <item>Settings can add a wait between hints, counted in playing time.</item>
+        <item>A clean solve is a win without any hint. Statistics count these and show your best clean time.</item>
+        <item>Unaided: solved with no hints and with Errors off for the whole game — shown separately in Statistics.</item>
+        <item>Each mistake is ½ point. A wrong entry is shown in red until you fix it.</item>
+        <item>\"Errors off\" hides wrong entries and counts no mistakes while it\'s on. Switch it back on and every wrong entry still on the board then counts as a mistake. The choice is remembered for each difficulty level.</item>
+        <item>The pause button stops the clock and hides the board. The game also pauses when you leave the app or lock the screen.</item>
+    </string-array>
+    <string name="scoring_penalty_off">Time penalty is off, so points don\'t change your final time. You can turn it on in Settings.</string>
+    <string name="scoring_penalty_on">At the end every point adds %1$d%% of your playing time to the final time. You can change this in Settings.</string>
+</resources>

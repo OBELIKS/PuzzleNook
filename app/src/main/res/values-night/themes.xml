@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.PuzzleNook" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/nook_night</item>
+    </style>
+</resources>

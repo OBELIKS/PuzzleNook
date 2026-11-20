@@ -1,0 +1,9 @@
+<resources>
+    <color name="nook_indigo">#34407A</color>
+    <color name="nook_cream">#FBF8F2</color>
+    <color name="nook_night">#14151B</color>
+
+    <style name="Theme.PuzzleNook" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/nook_cream</item>
+    </style>
+</resources>

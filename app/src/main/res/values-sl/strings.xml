@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common words and actions -->
+    <string name="action_back">Nazaj</string>
+    <string name="action_how_to_play">Navodila</string>
+    <string name="action_settings">Nastavitve</string>
+    <string name="action_statistics">Statistika</string>
+    <string name="action_got_it">V redu</string>
+    <string name="action_cancel">Prekliči</string>
+    <string name="action_reset">Ponastavi</string>
+    <string name="action_menu">Meni</string>
+    <string name="action_new_game">Nova igra</string>
+    <string name="action_continue">Nadaljuj</string>
+    <string name="action_pause">Premor</string>
+    <string name="action_resume">Nadaljuj</string>
+    <string name="paused_title">Premor</string>
+    <string name="action_undo">Razveljavi</string>
+    <string name="action_erase">Briši</string>
+    <string name="notes_on">Beležke vklj.</string>
+    <string name="notes_off">Beležke izklj.</string>
+    <string name="errors_on">Napake vidne</string>
+    <string name="errors_off">Napake skrite</string>
+    <string name="mode_fill">Pobarvaj</string>
+    <string name="mode_mark_empty">Označi prazno</string>
+    <string name="mode_mark_white">Označi belo</string>
+    <string name="mode_cross_out">Prečrtaj</string>
+    <string name="mode_line">Črta</string>
+    <string name="mode_wall">Stena</string>
+    <string name="mode_shade">Pobarvaj</string>
+    <string name="mode_star">Zvezda</string>
+    <string name="mode_black">Črna</string>
+    <string name="mode_white">Bela</string>
+    <string name="mode_sea">Morje</string>
+    <string name="mode_island">Otok</string>
+
+    <!-- Difficulty levels -->
+    <string name="difficulty_easy">Lahko</string>
+    <string name="difficulty_medium">Srednje</string>
+    <string name="difficulty_hard">Težko</string>
+    <string name="difficulty_expert">Mojstrsko</string>
+
+    <!-- Game names -->
+    <string name="title_classic">Sudoku</string>
+    <string name="title_killer">Killer sudoku</string>
+    <string name="title_kakuro">Kakuro</string>
+    <string name="title_nonogram">Nonogram</string>
+    <string name="title_futoshiki">Futoshiki</string>
+    <string name="title_calcudoku">Calcudoku</string>
+    <string name="title_skyscrapers">Nebotičniki</string>
+    <string name="title_star_battle">Zvezdna bitka</string>
+    <string name="title_hitori">Hitori</string>
+    <string name="title_nurikabe">Nurikabe</string>
+    <string name="title_slitherlink">Slitherlink</string>
+    <string name="title_hidato">Hidato</string>
+    <string name="title_takuzu">Takuzu</string>
+    <string name="title_mosaic">Mozaik</string>
+    <string name="title_light_up">Žarnice</string>
+    <string name="blurb_light_up">Osvetli vse celice, žarnice naj se ne vidijo</string>
+    <string name="summary_light_up">Postavi žarnice tako, da je vsaka bela celica osvetljena, nobeni dve se ne vidita in oštevilčene stene dobijo svoje žarnice.</string>
+    <string name="rule_light_up">Osvetli vse bele celice · žarnice se ne vidijo med seboj · število šteje žarnice ob njegovi steni</string>
+    <string name="mode_bulb">Žarnica</string>
+    <string name="mode_no_bulb">Brez žarnice</string>
+    <string-array name="rules_light_up">
+        <item>Žarnice postavljaj v bele celice. Žarnica osvetli svojo vrstico in stolpec do naslednje črne stene.</item>
+        <item>Vsaka bela celica mora biti osvetljena, nobena žarnica pa ne sme biti osvetljena z drugo žarnico.</item>
+        <item>Število na steni pove, koliko žarnic se je dotika zgoraj, spodaj, levo ali desno. Stene brez števila imajo lahko poljubno število.</item>
+        <item>Nasvet: štirica ima žarnice na vseh štirih straneh, ničla pa nobene; celica, ki jo lahko osvetli le eno mesto, mora imeti žarnico tam.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string name="controls_shade_tap_light_up">Tapni celico, da postaviš žarnico; ponovno tapni, da jo odstraniš. Osvetljene celice so obarvane.</string>
+    <string name="controls_shade_mode_light_up">Preklopi na „Brez žarnice“, da s piko označiš celice, za katere veš, da žarnice ni.</string>
+    <string name="title_tents">Šotori</string>
+    <string name="blurb_tents">Vsakemu drevesu dodaj šotor, števila zunaj</string>
+    <string name="summary_tents">Postavi šotor ob vsako drevo, en šotor na drevo, tako da se nobena dva šotora ne dotikata in ima vsaka vrstica in stolpec toliko šotorov, kot kaže število zunaj.</string>
+    <string name="rule_tents">Ob vsakem drevesu en šotor · šotori se ne dotikajo, niti diagonalno · števila zunaj štejejo šotore v vrstici ali stolpcu</string>
+    <string name="mode_tent">Šotor</string>
+    <string name="mode_no_tent">Brez šotora</string>
+    <string-array name="rules_tents">
+        <item>Vsako drevo ima natanko en šotor ob sebi, zgoraj, spodaj, levo ali desno. Vsak šotor pripada natanko enemu drevesu.</item>
+        <item>Šotori se med seboj ne dotikajo, niti diagonalno.</item>
+        <item>Števila zunaj mreže povedo, koliko šotorov je v tej vrstici ali stolpcu. Manjkajoče število pomeni, da za to črto ni namiga.</item>
+        <item>Nasvet: celica brez drevesa ob sebi nikoli ne more imeti šotora; drevo z le enim prostim sosedom mora imeti šotor tam.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string name="controls_shade_tap_tents">Tapni celico, da postaviš šotor; ponovno tapni, da ga odstraniš. Tapi na števila zunaj ne naredijo ničesar.</string>
+    <string name="controls_shade_mode_tents">Preklopi na „Brez šotora“, da s piko označiš celice, za katere veš, da šotora ni.</string>
+    <string name="controls_shade_last_tents">Število posivi, ko ima njegova črta pravo število šotorov. Ko so napake vidne, se šotori, ki se dotikajo, in napačne oznake pokažejo rdeče.</string>
+    <string name="title_kurodoko">Kurodoko</string>
+    <string name="title_masyu">Masyu</string>
+    <string name="blurb_kurodoko">Števila štejejo celice, ki jih vidijo</string>
+    <string name="blurb_masyu">Ena zanka skozi vsak biser</string>
+    <string name="summary_kurodoko">Pobarvaj celice tako, da vsako število vidi natanko toliko belih celic v svoji vrstici in stolpcu, pobarvane celice se ne dotikajo in bele ostanejo povezane.</string>
+    <string name="summary_masyu">Nariši eno sklenjeno zanko skozi središča celic, ki gre skozi vsak biser: na črnem biseru zavije in na obeh straneh gre ravno naprej, skozi beli biser gre ravno, v sosednji celici pa zavije.</string>
+    <string name="rule_kurodoko">Število šteje bele celice, ki jih vidi v vrstici in stolpcu, vključno s seboj · pobarvane celice se ne dotikajo · bele ostanejo povezane</string>
+    <string name="rule_masyu">Ena zanka skozi vsak biser · črni: tu zavij, na obeh straneh pojdi ravno naprej · beli: pojdi ravno skozi, v sosednji celici zavij</string>
+    <string-array name="rules_kurodoko">
+        <item>Število je bela celica. Šteje sebe in vsako belo celico, ki jo vidi naravnost gor, dol, levo in desno, do pobarvane celice ali roba.</item>
+        <item>Pobarvane celice se med seboj ne dotikajo zgoraj, spodaj, levo ali desno.</item>
+        <item>Vse bele celice morajo tvoriti eno povezano območje.</item>
+        <item>Nasvet: celica ob pobarvani je bela; enica ima pobarvane celice na vseh straneh, preveč kratek ali predolg pogled pa določi celice ob številu.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string name="controls_shade_tap_kurodoko">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš. Števil ni mogoče pobarvati.</string>
+    <string name="controls_shade_mode_kurodoko">Preklopi na „Označi belo“, da s piko označiš celice, za katere veš, da ostanejo bele.</string>
+    <string name="controls_shade_last_kurodoko">Število posivi, ko z tvojim trenutnim barvanjem vidi natanko toliko celic. Ko so napake vidne, se pobarvane celice, ki se dotikajo, in napačne oznake pokažejo rdeče.</string>
+    <string name="controls_shade_last_light_up">Število posivi, ko ima stena prave žarnice in so ostale strani označene. Ko so napake vidne, se žarnice, ki se vidijo, in napačne oznake pokažejo rdeče.</string>
+    <string name="title_norinori">Norinori</string>
+    <string name="blurb_norinori">V vsakem območju dve domini barvanja</string>
+    <string name="summary_norinori">Pobarvaj natanko dve celici v vsakem območju tako, da se vsaka pobarvana celica dotika natanko ene druge pobarvane celice: pobarvane celice tvorijo domine, ki lahko prečkajo meje območij.</string>
+    <string name="rule_norinori">V vsakem območju pobarvaj dve celici · vsaka pobarvana celica se dotika natanko ene druge pobarvane</string>
+    <string-array name="rules_norinori">
+        <item>V vsakem območju (območja imajo debele meje) pobarvaj natanko dve celici.</item>
+        <item>Vsaka pobarvana celica se mora dotikati natanko ene druge pobarvane celice zgoraj, spodaj, levo ali desno. Pobarvane celice torej tvorijo domine iz dveh celic.</item>
+        <item>Domina lahko leži znotraj enega območja ali prečka mejo med dvema območjema.</item>
+        <item>Nasvet: območje z dvema celicama je v celoti pobarvano; celica ob dokončani domini ostane bela.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja. Nekatere celice so lahko dane že na začetku.</item>
+    </string-array>
+    <string name="controls_shade_tap_norinori">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš. Danih celic ni mogoče spremeniti.</string>
+    <string name="controls_shade_mode_norinori">Preklopi na „Označi belo“, da s piko označiš celice, za katere veš, da ostanejo bele.</string>
+    <string name="controls_shade_last_norinori">Ko so napake vidne, se pobarvane celice, ki se dotikajo dveh drugih, območja z več kot dvema pobarvanima celicama in napačne oznake pokažejo rdeče.</string>
+    <string name="title_battleships">Ladjice</string>
+    <string name="blurb_battleships">Poišči floto po številih zunaj</string>
+    <string name="summary_battleships">Postavi celotno floto v mrežo: ladje so ravne, se med seboj ne dotikajo, niti diagonalno, in vsaka vrstica ter stolpec ima toliko celic ladij, kot kaže število zunaj. Nekatere celice so prikazane že na začetku.</string>
+    <string name="rule_battleships">Postavi floto · ladje se ne dotikajo, niti diagonalno · števila zunaj štejejo celice ladij v vrstici ali stolpcu</string>
+    <string name="mode_ship">Ladja</string>
+    <string name="mode_water">Voda</string>
+    <string-array name="rules_battleships">
+        <item>Poišči vse ladje flote, prikazane nad mrežo. Ladja je ravna vrsta celic, dolga ena celica ali več, ki leži vodoravno ali navpično.</item>
+        <item>Ladje se med seboj ne dotikajo, niti diagonalno, zato je vsaka ladja obdana z vodo.</item>
+        <item>Števila zunaj mreže povedo, koliko celic ladij je v tej vrstici ali stolpcu.</item>
+        <item>Celice, prikazane na začetku, so fiksne: okrogel konec pove, v katero smer ladja nadaljuje, kvadraten je celica ladje sredi ladje, pika pa je voda.</item>
+        <item>Nasvet: celica ladje ima vodo na vseh štirih diagonalah; črta brez celic ladij je vsa voda. Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string name="controls_shade_tap_battleships">Tapni celico, da postaviš celico ladje; ponovno tapni, da jo odstraniš. Tapi na števila zunaj ne naredijo ničesar, prikazanih celic ni mogoče spremeniti.</string>
+    <string name="controls_shade_mode_battleships">Preklopi na „Voda“, da s piko označiš celice, za katere veš, da so voda. Pravilna celica ladje sama označi svoje štiri diagonale.</string>
+    <string name="controls_shade_last_battleships">Število posivi, ko ima njegova črta pravo število celic ladij. Ladja na seznamu flote posivi in dobi kljukico, ko jo narišeš in na obeh koncih označiš vodo. Ko so napake vidne, se celice ladij, ki se napačno dotikajo, in napačne oznake pokažejo rdeče.</string>
+    <string name="title_aquarium">Akvarij</string>
+    <string name="blurb_aquarium">Napolni posode, števila zunaj</string>
+    <string name="summary_aquarium">Napolni posode z vodo tako, da ima vsaka vrstica in stolpec toliko celic z vodo, kot kaže število zunaj. V posodi voda leži ravno: celica z vodo pomeni, da je voda tudi v vseh celicah te posode v isti vrstici in pod njo.</string>
+    <string name="rule_aquarium">Napolni posode · gladina je ravna, posoda se polni od dna navzgor · števila zunaj štejejo celice z vodo v vrstici ali stolpcu</string>
+    <string name="mode_water_fill">Voda</string>
+    <string name="mode_air">Zrak</string>
+    <string-array name="rules_aquarium">
+        <item>Mreža je razdeljena na posode z debelimi mejami. Vsaka posoda drži vodo do ene višine in nič nad njo.</item>
+        <item>Če celica drži vodo, jo držijo tudi vse celice te posode v isti vrstici in vse celice pod njo.</item>
+        <item>Števila zunaj mreže povedo, koliko celic v tej vrstici ali stolpcu drži vodo. Manjkajoče število pomeni, da za to črto ni namiga.</item>
+        <item>Nasvet: črta, katere število je enako njeni dolžini, je vsa voda; število 0 pomeni sam zrak.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja. Nekatere celice so lahko dane že na začetku.</item>
+    </string-array>
+    <string name="controls_shade_tap_aquarium">Tapni celico, da jo napolniš z vodo; ponovno tapni, da jo počistiš. Tapi na števila zunaj ne naredijo ničesar.</string>
+    <string name="controls_shade_mode_aquarium">Preklopi na „Zrak“, da s piko označiš celice, za katere veš, da vode ne držijo.</string>
+    <string name="controls_shade_last_aquarium">Število posivi, ko ima njegova črta pravo število celic z vodo. Ko so napake vidne, se voda nad zrakom v posodi in napačne oznake pokažejo rdeče.</string>
+    <string name="title_heyawake">Heyawake</string>
+    <string name="blurb_heyawake">Pobarvaj celice v sobah, bele naj ostanejo povezane</string>
+    <string name="summary_heyawake">Pobarvaj nekaj celic tako, da ima vsaka soba s številom natanko toliko pobarvanih celic. Pobarvane celice se ne dotikajo ob straneh, vse bele celice ostanejo povezane in nobena ravna črta belih celic ne poteka skozi tri sobe.</string>
+    <string name="rule_heyawake">Števila štejejo pobarvane celice · brez dotikanja · bele povezane · bela črta ne teče skozi tri sobe</string>
+    <string-array name="rules_heyawake">
+        <item>Mreža je z debelimi mejami razdeljena na pravokotne sobe. Število v sobi pove, koliko njenih celic je pobarvanih; soba brez števila lahko drži poljubno število.</item>
+        <item>Pobarvane celice se med seboj ne dotikajo zgoraj, spodaj, levo ali desno.</item>
+        <item>Vse bele celice tvorijo eno povezano območje.</item>
+        <item>Ravna črta belih celic, vodoravna ali navpična, ne sme potekati skozi tri sobe: ne sme prečkati dveh mej sob, ne da bi naletela na pobarvano celico.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja. Nekatere celice so lahko dane že na začetku.</item>
+    </string-array>
+    <string name="controls_shade_tap_heyawake">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš. Danih celic ni mogoče spremeniti.</string>
+    <string name="controls_shade_mode_heyawake">Preklopi na „Označi belo“, da s piko označiš celice, za katere veš, da ostanejo bele.</string>
+    <string name="controls_shade_last_heyawake">Število sobe posivi, ko ima soba toliko pobarvanih celic. Ko so napake vidne, se pobarvane celice, ki se dotikajo, soba s preveč pobarvanimi celicami in napačne oznake pokažejo rdeče.</string>
+    <string name="title_lits">LITS</string>
+    <string name="blurb_lits">En tetromino v vsakem območju</string>
+    <string name="summary_lits">V vsakem območju pobarvaj natanko en tetromino, lik iz štirih povezanih celic. Vse pobarvane celice tvorijo eno povezano območje, noben kvadrat 2×2 ni povsem pobarvan in dva tetromina iste oblike, zasukana ali zrcaljena, se ne dotikata ob straneh.</string>
+    <string name="rule_lits">En tetromino v območju · pobarvane celice povezane, brez kvadrata 2×2 · enaki liki se ne dotikajo</string>
+    <string-array name="rules_lits">
+        <item>Mreža je z debelimi mejami razdeljena na območja. V vsakem območju pobarvaj natanko štiri povezane celice: tvorijo lik L, I, T ali S (tetromino).</item>
+        <item>Vse pobarvane celice tvorijo eno povezano območje.</item>
+        <item>Noben kvadrat 2×2 ne sme biti povsem pobarvan.</item>
+        <item>Dva tetromina iste oblike, zasukana ali zrcaljena, se ne smeta dotikati ob straneh. Tetromina različnih oblik se smeta.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja. Nekatere celice so lahko dane že na začetku.</item>
+    </string-array>
+    <string name="title_fillomino">Fillomino</string>
+    <string name="blurb_fillomino">Vpiši števila, da ima vsako območje svojo velikost</string>
+    <string name="summary_fillomino">V vsako celico vpiši število tako, da ima vsaka skupina celic z enakim številom, ki se dotikajo, natanko toliko celic. Dve skupini iste velikosti se ne dotikata.</string>
+    <string name="rule_fillomino">Skupina enakih števil, ki se dotikajo, ima toliko celic, kolikor je število · skupini iste velikosti se ne dotikata</string>
+    <string-array name="rules_fillomino">
+        <item>V vsako celico vpiši število od 1 do 9.</item>
+        <item>Število pove, kako veliko je njegovo območje: celice z enakim številom, ki se dotikajo, tvorijo območje in to ima natanko toliko celic. Trojka sodi v območje s tremi celicami, enica stoji sama.</item>
+        <item>Dve območji iste velikosti se ne dotikata ob straneh, zato dotikajoča se enaka števila vedno sodijo v isto območje. Debele črte kažejo, kje se dotikata celici z različnima številoma.</item>
+        <item>Nasvet: območje, ki je še premajhno in ima le enega prostega soseda, se mora razširiti vanj. Število lahko stoji le tam, kjer se poveže dovolj prostih celic za območje njegove velikosti.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string name="controls_shade_tap_lits">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš. Danih celic ni mogoče spremeniti.</string>
+    <string name="controls_shade_mode_lits">Preklopi na „Označi belo“, da s piko označiš celice, za katere veš, da ostanejo bele.</string>
+    <string name="controls_shade_last_lits">Ko so napake vidne, se pobarvan kvadrat 2×2, območje z več kot štirimi pobarvanimi celicami, enaki tetromini, ki se dotikajo, in napačne oznake pokažejo rdeče.</string>
+    <string name="title_shikaku">Pravokotniki</string>
+    <string name="blurb_shikaku">Razdeli mrežo na pravokotnike</string>
+    <string name="summary_shikaku">Razdeli mrežo na pravokotnike tako, da vsak vsebuje natanko eno število in to število je njegova ploščina.</string>
+    <string name="rule_shikaku">Razdeli mrežo na pravokotnike · vsak vsebuje eno število · število je njegova ploščina</string>
+    <string-array name="rules_shikaku">
+        <item>Celotno mrežo razdeli na pravokotnike. Vsaka celica pripada natanko enemu pravokotniku.</item>
+        <item>Vsak pravokotnik vsebuje natanko eno število, to število pa je število celic v pravokotniku.</item>
+        <item>Nasvet: število, ki ustreza le enemu pravokotniku, lahko narišeš takoj; celica, do katere seže le eno število, pripada temu številu.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="controls_shikaku">
+        <item>Povleci od ene celice do nasprotnega kota, da narišeš pravokotnik. Med vlečenjem se pokaže predogled; postavi se, ko dvigneš prst ali pisalo.</item>
+        <item>Nov pravokotnik nadomesti vsak pravokotnik, ki ga prekriva.</item>
+        <item>Tapni znotraj pravokotnika, da ga odstraniš. Tapni samotno enico, da narišeš njeno celico.</item>
+        <item>Število posivi, ko ima njegov pravokotnik pravo velikost okoli samo tega števila. Ko so napake vidne, se pravokotnik, ki ni del rešitve, pokaže rdeče.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="title_galaxies">Galaksije</string>
+    <string name="blurb_galaxies">Razdeli mrežo na simetrične galaksije</string>
+    <string name="summary_galaxies">Nariši stene po črtah mreže in razdeli polje na območja: vsako območje vsebuje natanko eno piko in izgleda enako, če ga zavrtiš za pol kroga okoli te pike.</string>
+    <string name="rule_galaxies">Nariši stene po črtah mreže · vsako območje ima eno piko · po polobratu okoli pike izgleda enako</string>
+    <string name="loading_galaxies">Rišem galaksije …</string>
+    <string-array name="rules_galaxies">
+        <item>S stenami po črtah mreže razdeli vse polje na območja. Zunanji rob je že stena.</item>
+        <item>Vsako območje vsebuje natanko eno piko in pika je njegovo središče: če območje zavrtiš za pol kroga okoli pike, se natančno prekrije samo s seboj.</item>
+        <item>Pika na črti ali v kotu pripada vsem celicam okoli sebe, zato skozi piko ne sme iti nobena stena.</item>
+        <item>Nasvet: če celica pripada piki, ji pripada tudi celica, ki je nasproti nje na drugi strani pike. Celica, ki je ne moreš povezati s piko brez stene na poti, ali ki ima zrcalno celico zunaj polja ali pri drugi piki, ji ne more pripadati.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="controls_galaxies">
+        <item>Tapni blizu črte mreže, da tam narišeš steno; ponovno tapni, da jo odstraniš.</item>
+        <item>Ali povleci od kota do kota in z enim potegom nariši več sten. Če začneš na steni, namesto tega briše.</item>
+        <item>Preklopi na „Prečrtaj“, da postaviš ✕ na črte, za katere veš, da niso stene. Oznake ✕ so neobvezne.</item>
+        <item>Območje, ki si ga zaprl z eno piko in pravo simetrijo, dobi barvno ploskev. Ko so napake vidne, se stena, ki ni del rešitve, pokaže rdeče.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="title_yajilin">Yajilin</string>
+    <string name="blurb_yajilin">Pobarvaj celice, zanka naj gre skozi ostale</string>
+    <string name="summary_yajilin">Pobarvaj nekaj celic tako, da se nobeni dve ne dotikata, nato nariši eno sklenjeno zanko skozi središča vseh ostalih celic, ki niso puščice: puščica pove, koliko celic v njeni smeri je pobarvanih.</string>
+    <string name="rule_yajilin">Puščica šteje pobarvane celice v svoji smeri · pobarvane celice se ne dotikajo · ena zanka skozi vse ostale celice</string>
+    <string-array name="rules_yajilin">
+        <item>Nekatere celice vsebujejo puščico in število. Število pove, koliko celic v smeri puščice, do roba polja, je pobarvanih. Celice s puščico niso nikoli pobarvane in zanka ne gre skozi njih.</item>
+        <item>Pobarvane celice se nikoli ne dotikajo ob stranici.</item>
+        <item>Nariši eno samo sklenjeno zanko skozi središča celic tako, da sosednje celice povežeš s črtami. Zanka se ne seka, ne dotika same sebe in se ne razveji.</item>
+        <item>Vsaka celica, ki ni ne puščica ne pobarvana, leži na zanki.</item>
+        <item>Nasvet: celica ob pobarvani celici je na zanki; celica v kotu ali ob celicah s puščicami, ki ima manj kot dve izhoda, mora biti pobarvana; zanka se ne sme skleniti, preden je šla skozi vse celice.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="controls_yajilin">
+        <item>V načinu Pobarvaj tapni celico, da jo pobarvaš, ponovno tapni za piko (ni pobarvana) in še enkrat, da jo počistiš. Povleci čez celice in enako naredi z vsemi v enem potegu.</item>
+        <item>Preklopi na „Črta“, da narišeš zanko: tapni med dvema celicama, da tam narišeš črto, ali povleci od celice do celice. Če začneš na črti, namesto tega briše.</item>
+        <item>Puščica zbledi, ko se pobarvane celice ujemajo z njenim številom. Ko so napake vidne, se puščica s preveč pobarvanimi celicami, pobarvane celice, ki se dotikajo, in vse, kar ni del rešitve, pokažejo rdeče.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="title_bridges">Mostovi</string>
+    <string name="blurb_bridges">Poveži otoke z mostovi</string>
+    <string name="summary_bridges">Poveži vse otoke z vodoravnimi in navpičnimi mostovi: vsak otok ima toliko mostov, kot je njegovo število, med dvema otokoma sta največ dva mostova in mostovi se ne križajo.</string>
+    <string name="rule_bridges">Poveži vse otoke · število je število mostov · med parom največ dva mostova · brez križanja</string>
+    <string-array name="rules_bridges">
+        <item>Otoke poveži z ravnimi, vodoravnimi ali navpičnimi mostovi.</item>
+        <item>Vsak otok ima natanko toliko mostov, kot je njegovo število.</item>
+        <item>Med istima otokoma sta največ dva mostova, mostovi pa se ne križajo med seboj ali čez otok.</item>
+        <item>Vsi otoki morajo biti na koncu povezani v eno skupino.</item>
+        <item>Nasvet: štirica z le dvema sosedoma potrebuje po dva mostova do vsakega; dva otoka, ki bi sama zaprla skupino, ne moreta biti povezana.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="controls_bridges">
+        <item>Povleci od otoka proti sosednjemu otoku, da dodaš most: en most, nato dva, nato spet nobenega.</item>
+        <item>Tapni most, da ga preklopiš na enak način. Most, ki bi prečkal drugega, ne naredi ničesar.</item>
+        <item>Otok posivi, ko ima vse svoje mostove. Ko so napake vidne, se most, ki ga rešitev nima, in otok s preveč mostovi pokažeta rdeče.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="title_jigsaw">Nepravilni sudoku</string>
+    <string name="title_suguru">Suguru</string>
+
+    <!-- Home -->
+    <string name="home_tagline">Prijeten kotiček za logične uganke</string>
+    <string name="section_numbers">Števila</string>
+    <string name="section_shading">Barvanje</string>
+    <string name="section_lines">Črte in poti</string>
+    <string name="section_regions">Območja</string>
+    <string name="home_continue">Nadaljuj: %1$s · %2$s</string>
+    <string name="blurb_classic">Klasična številska logika 9×9</string>
+    <string name="blurb_killer">Sudoku s seštevki kletk</string>
+    <string name="blurb_jigsaw">Sudoku z nepravilnimi območji</string>
+    <string name="blurb_suguru">Območja od 1 do 5, enake števke se ne dotikajo</string>
+    <string name="blurb_kakuro">Številska križanka s seštevki</string>
+    <string name="blurb_futoshiki">Številski kvadrat z znaki &lt; in &gt;</string>
+    <string name="blurb_calcudoku">Kletke s cilji + − × ÷</string>
+    <string name="blurb_skyscrapers">Preštej stavbe, ki jih vidiš</string>
+    <string name="blurb_nonogram">Slikovna logika s številskimi oznakami</string>
+    <string name="blurb_star_battle">Zvezde v vsaki vrstici, stolpcu in območju</string>
+    <string name="blurb_hitori">Pobarvaj ponovljena števila</string>
+    <string name="blurb_nurikabe">Otoki v povezanem morju</string>
+    <string name="blurb_takuzu">Črni in beli krogci, nikoli trije enaki</string>
+    <string name="blurb_mosaic">Števila štejejo pobarvane sosede</string>
+    <string name="blurb_slitherlink">Ena zanka okoli števil</string>
+    <string name="blurb_hidato">Pot števil skozi vsako celico</string>
+
+    <!-- Game menu -->
+    <string name="menu_saved_detail">%1$s · %2$s</string>
+    <string name="menu_new_game_heading">Nova igra</string>
+    <string name="menu_best">Najboljši: %1$s</string>
+    <string name="menu_no_best">Še brez rezultata</string>
+    <string name="menu_solved">Rešeno: %1$d</string>
+    <string name="menu_replace_title">Začnem novo igro?</string>
+    <string name="menu_replace_text">Trenutna igra (%1$s) bo izgubljena.</string>
+    <string name="menu_start_difficulty">Začni: %1$s</string>
+    <string name="detail_kakuro">%1$d×%1$d celic</string>
+    <string name="detail_nonogram">Slika %1$d×%1$d</string>
+    <string name="detail_grid">Mreža %1$d×%1$d</string>
+    <string name="detail_squares">%1$d×%1$d kvadratkov</string>
+    <string name="detail_hidato">Mreža %1$d×%1$d, od 1 do %2$d</string>
+    <plurals name="detail_killer">
+        <item quantity="one">Kletke do %1$d celice</item>
+        <item quantity="two">Kletke do %1$d celic</item>
+        <item quantity="few">Kletke do %1$d celic</item>
+        <item quantity="other">Kletke do %1$d celic</item>
+    </plurals>
+    <plurals name="detail_star_battle">
+        <item quantity="one">Mreža %1$d×%1$d, po %2$d zvezdo</item>
+        <item quantity="two">Mreža %1$d×%1$d, po %2$d zvezdi</item>
+        <item quantity="few">Mreža %1$d×%1$d, po %2$d zvezde</item>
+        <item quantity="other">Mreža %1$d×%1$d, po %2$d zvezd</item>
+    </plurals>
+    <plurals name="detail_calcudoku">
+        <item quantity="one">Mreža %1$d×%1$d, kletke do %2$d celice</item>
+        <item quantity="two">Mreža %1$d×%1$d, kletke do %2$d celic</item>
+        <item quantity="few">Mreža %1$d×%1$d, kletke do %2$d celic</item>
+        <item quantity="other">Mreža %1$d×%1$d, kletke do %2$d celic</item>
+    </plurals>
+    <string name="summary_classic">Izpolni mrežo tako, da vsaka vrstica, stolpec in kvadrat 3×3 vsebuje števke od 1 do 9.</string>
+    <string name="summary_killer">Sudoku, v katerem črtkane kletke kažejo vsoto svojih števk.</string>
+    <string name="summary_jigsaw">Sudoku, v katerem so kvadrati 3×3 zamenjani z nepravilnimi območji.</string>
+    <string name="summary_suguru">Vsako območje izpolni s števili od 1 do njegove velikosti; enake števke se ne dotikajo, niti diagonalno.</string>
+    <string name="summary_kakuro">Številska križanka: vsota vsakega niza je enaka njegovi oznaki.</string>
+    <string name="summary_nonogram">Pobarvaj celice po številskih oznakah in razkrij sliko.</string>
+    <string name="summary_futoshiki">Majhen številski kvadrat z znakoma &lt; in &gt; med celicami.</string>
+    <string name="summary_calcudoku">Kletke kažejo cilj ter vsoto, razliko, zmnožek ali količnik.</string>
+    <string name="summary_skyscrapers">Števke so višine stavb; oznake ob robu štejejo stavbe, ki jih vidiš.</string>
+    <string name="summary_star_battle">Postavi zvezde tako, da ima vsaka vrstica, stolpec in območje enako število zvezd in se nobeni ne dotikata.</string>
+    <string name="summary_hitori">Pobarvaj ponovljena števila; pobarvane celice se ne dotikajo, bele pa ostanejo povezane.</string>
+    <string name="summary_nurikabe">Pobarvaj morje okoli oštevilčenih otokov: eno povezano morje, brez bazenov 2×2.</string>
+    <string name="summary_slitherlink">Nariši eno sklenjeno zanko po pikah; vsako število šteje svoje stranice na zanki.</string>
+    <string name="summary_hidato">Izpolni mrežo s potjo števil, od katerih se vsako dotika naslednjega.</string>
+    <string name="summary_takuzu">Izpolni mrežo s črnimi in belimi krogci: nikoli trije enaki zapored, vsaka vrstica in vsak stolpec pa sta uravnotežena.</string>
+    <string name="summary_mosaic">Pobarvaj celice tako, da vsako število ustreza pobarvanim celicam okoli sebe.</string>
+
+    <!-- Game screens -->
+    <string name="status_mistakes">Napake: %1$d</string>
+    <string name="status_mistakes_hidden">Napake: –</string>
+    <string name="status_hints">Namigi: %1$s</string>
+    <string name="status_time_penalty">Čas +%1$d %%</string>
+    <string name="hint_reveal">Razkrij %1$s</string>
+    <string name="hint_none_left">Ni namigov</string>
+    <string name="hint_cost">Namig %1$s</string>
+    <plurals name="hint_with_left">
+        <item quantity="one">%1$s\nše %2$d</item>
+        <item quantity="two">%1$s\nše %2$d</item>
+        <item quantity="few">%1$s\nše %2$d</item>
+        <item quantity="other">%1$s\nše %2$d</item>
+    </plurals>
+    <string name="loading_numbers">Razvrščam števila …</string>
+    <string name="loading_grid">Pripravljam mrežo …</string>
+    <string name="loading_picture">Rišem sliko …</string>
+    <string name="loading_loop">Rišem zanko …</string>
+    <string name="loading_path">Postavljam pot …</string>
+    <string name="hidato_still_to_place">Še manjkajo: %1$s</string>
+    <string name="flash_unreadable">Ne morem prebrati – poskusi znova</string>
+    <string name="flash_digit_range">V tej uganki so le števke 1–%1$d</string>
+    <string name="flash_nothing_to_delete">Tu ni ničesar za brisanje</string>
+    <string name="flash_erase_first">Najprej izbriši število, da lahko dodaš beležke</string>
+
+    <!-- Win dialog -->
+    <string name="win_title">Rešeno!</string>
+    <string name="win_playing_time">Čas igranja: %1$s</string>
+    <string name="win_mistakes_hints">Napake: %1$d (po ½ točke) · Namigi: %2$s</string>
+    <string name="win_penalty_off">Časovna kazen je izklopljena</string>
+    <string name="win_penalty">Kazenske točke: %1$s × %2$d %% = +%3$d %% (+%4$s)</string>
+    <string name="win_final_time">Končni čas: %1$s</string>
+    <string name="win_final_time_best">Končni čas: %1$s · nov najboljši!</string>
+
+    <!-- Settings -->
+    <string name="settings_language">Jezik</string>
+    <string name="language_system">Kot sistem</string>
+    <string name="settings_theme">Tema</string>
+    <string name="theme_system">Kot sistem</string>
+    <string name="theme_light">Svetla</string>
+    <string name="theme_dark">Temna</string>
+    <string name="theme_eink">E-ink</string>
+    <string name="theme_eink_description">Črno-belo, brez animacij – za Boox in druge e-ink zaslone</string>
+    <string name="settings_number_colours">Barve števil</string>
+    <string name="settings_number_colours_description">Prilagojeno barvnemu e-inku, kot je Boox Note Air 5C. Začetna števila ostanejo vedno črna.</string>
+    <string name="settings_your_answers">Tvoji odgovori</string>
+    <string name="settings_notes">Beležke</string>
+    <string name="ink_theme">Tema</string>
+    <string name="ink_blue">Modra</string>
+    <string name="ink_red">Rdeča</string>
+    <string name="ink_green">Zelena</string>
+    <string name="ink_orange">Oranžna</string>
+    <string name="ink_purple">Vijolična</string>
+    <string name="ink_teal">Turkizna</string>
+    <string name="ink_magenta">Škrlatna</string>
+    <string name="ink_brown">Rjava</string>
+    <string name="ink_grey">Siva</string>
+    <string name="settings_penalty">Časovna kazen</string>
+    <string name="settings_penalty_description">Vsaka napaka je ½ točke in vsak korak namiga ½ točke. Ko končaš, vsaka točka končnemu času prišteje tukaj izbran delež tvojega časa igranja. Velja za vse igre, tudi za tisto, ki je v teku.</string>
+    <string name="penalty_off">Izklopljeno</string>
+    <string name="penalty_choice">+%1$d %%</string>
+    <string name="settings_help">Pomoč</string>
+    <string name="settings_help_description">Spremembe veljajo od naslednje nove igre.</string>
+    <string name="settings_hints_per_game">Namigi na igro</string>
+    <string name="hint_limit_unlimited">Neomejeno</string>
+    <string name="hint_limit_none">Brez</string>
+    <string name="settings_rising_cost">Naraščajoča cena namigov</string>
+    <string name="settings_rising_cost_description">Vsak naslednji namig v igri stane več: ½, 1, 1½ …</string>
+    <string name="settings_wait_between_hints">Premor med namigi</string>
+    <string name="cooldown_off">Izklopljeno</string>
+    <string name="cooldown_seconds">%1$d s</string>
+    <string name="cooldown_minutes">%1$d min</string>
+    <string name="settings_handwriting">Ročno pisanje</string>
+    <string name="settings_stylus">Piši števila s pisalom</string>
+    <string name="settings_stylus_description">Piši kar v celico s peresom S Pen ali Boox. S prstom še vedno izbiraš celice.</string>
+    <string name="settings_small_notes">Majhno pisanje postane beležka</string>
+    <string name="settings_small_notes_description">Števko napiši majhno (pod približno polovico celice), da se doda kot beležka; za odgovor jo napiši veliko.</string>
+    <string name="settings_recogniser">Razpoznavalnik</string>
+    <string name="recogniser_ready">Googlov model za rokopis (na napravi)</string>
+    <string name="recogniser_downloading">Prenašam Googlov model za rokopis … medtem uporabljam vgrajeni razpoznavalnik</string>
+    <string name="recogniser_unavailable">Vgrajeni razpoznavalnik (Googlov model na tej napravi ni na voljo)</string>
+    <string name="settings_pen">Pisalo</string>
+    <string name="settings_pen_onyx">Onyxovo risanje s pisalom z nizkim zamikom</string>
+    <string name="settings_learned">Naučeno</string>
+    <string name="learned_none">Zaenkrat nič. Če je števka napačno prebrana, tapni pravo število na tipkovnici in aplikacija se bo naučila tvojega rokopisa.</string>
+    <plurals name="learned_samples">
+        <item quantity="one">%1$d vzorec tvojega rokopisa</item>
+        <item quantity="two">%1$d vzorca tvojega rokopisa</item>
+        <item quantity="few">%1$d vzorci tvojega rokopisa</item>
+        <item quantity="other">%1$d vzorcev tvojega rokopisa</item>
+    </plurals>
+    <string name="settings_forget_learned">Pozabi naučeni rokopis</string>
+    <string name="settings_about">O aplikaciji</string>
+    <string name="settings_version">Različica</string>
+    <string name="version_value">%1$s (gradnja %2$d)</string>
+    <string name="version_unknown">neznana</string>
+
+    <!-- Statistics -->
+    <string name="stats_reset_title">Ponastavim statistiko?</string>
+    <string name="stats_reset_text_game">Izbrišem zmage, najboljše čase in zgodovino (%1$s)? Tega ni mogoče razveljaviti.</string>
+    <string name="stats_reset_text_all">Izbrišem zmage, najboljše čase in zgodovino za vse igre? Tega ni mogoče razveljaviti.</string>
+    <string name="stats_reset_description">Ponastavi statistiko</string>
+    <string name="stats_game_label">Igra</string>
+    <string name="stats_all_games">Vse igre</string>
+    <string name="stats_times_label">Časi</string>
+    <string name="stats_penalty_none">Samo čas igranja (brez kazni)</string>
+    <string name="stats_penalty_percent">+%1$d %% na kazensko točko</string>
+    <string name="stats_your_setting">%1$s · tvoja nastavitev</string>
+    <string name="stats_nothing_played">Še nič ni odigrano. Reši uganko in prikazala se bo tukaj.</string>
+    <string name="stats_note_no_penalty">Časi so samo čas igranja, brez kazni za napake in namige.</string>
+    <string name="stats_note_penalty">Časi so čas igranja plus %1$d %% tega časa za vsako kazensko točko (napaka ali korak namiga je ½ točke), kot da bi bila to tvoja nastavitev v vseh igrah.</string>
+    <string name="stats_note_old_best">* Rešeno pred različico 0.7.1, ko časi niso bili podrobno zapisani: prikazan je najboljši čas, shranjen takrat, z nastavitvijo kazni, ki je veljala takrat.</string>
+    <string name="stats_solved">Rešeno</string>
+    <string name="stats_started">Začeto</string>
+    <string name="stats_finished">Dokončano</string>
+    <string name="stats_percent">%1$d %%</string>
+    <string name="stats_time_played">Čas igranja</string>
+    <string name="stats_mistakes_per_game">Napake na igro</string>
+    <string name="stats_hints_per_game">Namigi na igro</string>
+    <string name="stats_not_played">Še ni odigrano</string>
+    <string name="stats_header_best">Najboljši</string>
+    <string name="stats_header_average">Povprečje</string>
+    <string name="stats_solved_of">%1$d od %2$d</string>
+    <string name="stats_clean_unaided">Čiste: %1$d · najboljši %2$s&#8195;Brez pomoči: %3$d · najboljši %4$s</string>
+    <string name="stats_recent_wins">Zadnje zmage</string>
+    <plurals name="stats_recent_detail">
+        <item quantity="one">%1$s · %2$d napaka, namigi %3$s</item>
+        <item quantity="two">%1$s · %2$d napaki, namigi %3$s</item>
+        <item quantity="few">%1$s · %2$d napake, namigi %3$s</item>
+        <item quantity="other">%1$s · %2$d napak, namigi %3$s</item>
+    </plurals>
+    <string name="stats_tag_unaided">brez pomoči</string>
+    <string name="stats_tag_clean">čista rešitev</string>
+    <string name="stats_played_time">Odigrano: %1$s</string>
+
+    <!-- How to play -->
+    <string name="how_title">Navodila: %1$s</string>
+    <string name="how_section_rules">Pravila</string>
+    <string name="how_section_playing">Igranje</string>
+    <string name="how_section_scoring">Namigi in čas</string>
+
+    <!-- One-line rules shown at the top of a game screen -->
+    <string name="rule_classic">Vsaka vrstica, stolpec in kvadrat 3×3 vsebuje števke od 1 do 9 po enkrat</string>
+    <string name="rule_killer">Vsaka vrstica, stolpec in kvadrat 3×3 vsebuje števke od 1 do 9 po enkrat · števke v kletki dajo njeno vsoto, brez ponavljanja</string>
+    <string name="rule_jigsaw">Vsaka vrstica, stolpec in barvno območje vsebuje števke od 1 do 9 po enkrat</string>
+    <string name="rule_suguru">Območje z n celicami vsebuje števila od 1 do n · enake števke se ne dotikajo, niti diagonalno</string>
+    <string name="rule_kakuro">Vsota vsakega niza je enaka njegovi oznaki · števka se v nizu ne ponovi</string>
+    <string name="rule_futoshiki">Vsaka vrstica in stolpec vsebuje števila od 1 do %1$d po enkrat · &lt; in &gt; kažeta na manjše število</string>
+    <string name="rule_calcudoku">Vsaka vrstica in stolpec vsebuje števila od 1 do %1$d po enkrat · števke v kletki dajo njen cilj z njenim znakom + − × ÷</string>
+    <string name="rule_skyscrapers">Vsaka vrstica in stolpec vsebuje višine od 1 do %1$d po enkrat · oznaka šteje stavbe, vidne z njene strani</string>
+    <string name="rule_nonogram">Oznake so dolžine nizov pobarvanih celic v vsaki vrstici in stolpcu, po vrsti, s presledki vmes</string>
+    <plurals name="rule_star_battle">
+        <item quantity="one">%1$d zvezda v vsaki vrstici, stolpcu in območju · zvezde se ne dotikajo, niti diagonalno</item>
+        <item quantity="two">%1$d zvezdi v vsaki vrstici, stolpcu in območju · zvezde se ne dotikajo, niti diagonalno</item>
+        <item quantity="few">%1$d zvezde v vsaki vrstici, stolpcu in območju · zvezde se ne dotikajo, niti diagonalno</item>
+        <item quantity="other">%1$d zvezd v vsaki vrstici, stolpcu in območju · zvezde se ne dotikajo, niti diagonalno</item>
+    </plurals>
+    <string name="rule_takuzu">Nikoli trije enaki zapored · vrstice in stolpci pol ● pol ○ · nobeni dve vrstici in nobena dva stolpca nista enaka</string>
+    <string name="rule_mosaic">Vsako število šteje pobarvane celice v svojem bloku 3×3, vključno s seboj</string>
+    <string name="rule_hitori">Nobeno število se ne ponovi med belimi celicami vrstice ali stolpca · pobarvane celice se ne dotikajo ob straneh · bele celice ostanejo povezane</string>
+    <string name="rule_nurikabe">Vsako število je otok s toliko celicami · eno povezano morje, brez bazenov 2×2</string>
+    <string name="rule_slitherlink">Nariši eno sklenjeno zanko po pikah · vsako število šteje svoje stranice na zanki</string>
+    <string name="rule_hidato">Pot od 1 do konca · vsako število se dotika naslednjega, ob strani ali diagonalno</string>
+
+    <!-- Rules (bullets) -->
+    <string-array name="rules_hidato">
+        <item>Izpolni vsako celico tako, da števila 1, 2, 3 … do števila celic tvorijo eno pot.</item>
+        <item>Vsako število se dotika naslednjega: ob strani ali diagonalno.</item>
+        <item>Nekatera števila so dana, vedno tudi prvo in zadnje.</item>
+        <item>Nasvet: poišči vrzeli z malo celicami med dvema danima številoma, na primer 12 in 14 z eno samo celico, ki se dotika obeh.</item>
+        <item>Nasvet: kotna celica ima le tri sosede, zato je pogosto konec kratkega odseka.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_masyu">
+        <item>Nariši eno sklenjeno zanko skozi središča celic tako, da sosednje celice povežeš s črtami.</item>
+        <item>Zanka se nikoli ne seka, ne dotika same sebe in se ne razveji. Ni ji treba obiskati vseh celic.</item>
+        <item>Zanka gre skozi vsak biser.</item>
+        <item>Na črnem biseru zanka zavije, v obe smeri pa gre skozi naslednjo celico ravno naprej, preden sme zaviti.</item>
+        <item>Skozi beli biser gre zanka ravno, v vsaj eni od obeh celic tik pred biserom ali za njim pa zavije.</item>
+        <item>Nasvet: črni biser ne more usmeriti zanke proti robu, ki je oddaljen le eno celico, niti proti drugemu črnemu biseru: ni prostora, da bi šla ravno naprej.</item>
+        <item>Nasvet: pri treh belih biserih v vrsti srednjega prečkaš v drugo smer.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+        <string-array name="rules_slitherlink">
+        <item>Nariši eno sklenjeno zanko tako, da sosednje pike povežeš s črtami.</item>
+        <item>Zanka se nikoli ne seka, ne dotika same sebe in se ne razveji: iz vsake pike gresta dve črti ali nobena.</item>
+        <item>Število pove, koliko od štirih stranic njegovega kvadratka je del zanke. Kvadratki brez števila jih imajo lahko poljubno.</item>
+        <item>Nasvet: okoli ničle ni nobene črte, zato njene štiri stranice označi z ✕.</item>
+        <item>Nasvet: trojka v kotu mreže zasede obe zunanji stranici kota.</item>
+        <item>Nasvet: dve trojki druga ob drugi si delita vmesno črto, črte pa so tudi njune zunanje stranice.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_mosaic">
+        <item>Pobarvaj nekaj celic. Število pove, koliko celic v njegovem bloku 3×3 je pobarvanih: sama celica in celice okoli nje (ob robovih in kotih manj).</item>
+        <item>Celice brez števila so lahko pobarvane ali ne, odločajo števila okoli njih.</item>
+        <item>Nasvet: 0 pomeni, da celoten blok ostane bel, 9 pa, da je vseh devet celic pobarvanih.</item>
+        <item>Nasvet: štirica v kotu pomeni, da je pobarvan ves blok; enako velja za šestico ob robu.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_takuzu">
+        <item>Vsako celico izpolni s črnim ali belim krogcem.</item>
+        <item>V vrstici ali stolpcu sta lahko drug ob drugem kvečjemu dva krogca iste barve.</item>
+        <item>Vsaka vrstica in vsak stolpec vsebuje enako število črnih in belih krogcev.</item>
+        <item>Nobeni dve vrstici nista enaki in nobena dva stolpca nista enaka.</item>
+        <item>Nasvet: ob dveh enakih krogcih drug ob drugem je na obeh koncih druga barva; pri vzorcu ● _ ● je vrzel bela.</item>
+        <item>Nasvet: ko ima vrstica ali stolpec polovico celic v eni barvi, so vse preostale v drugi.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_star_battle">
+        <item>Postavi zvezde v mrežo. Debele črte jo razdelijo na območja.</item>
+        <item>Vsaka vrstica, vsak stolpec in vsako območje dobi enako število zvezd: 1 pri težavnosti Lahko in Srednje, 2 pri Težko in Mojstrsko.</item>
+        <item>Zvezde se nikoli ne dotikajo, niti diagonalno.</item>
+        <item>Nasvet: ko ima vrstica, stolpec ali območje svoje zvezde, ostalo označi kot prazno.</item>
+        <item>Nasvet: majhno območje, stisnjeno v eno vrstico ali en stolpec, vzame zvezdo te vrstice ali stolpca, zato je preostanek prazen.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_hitori">
+        <item>Pobarvaj celice tako, da se nobeno število ne pojavi dvakrat med belimi celicami vrstice ali stolpca.</item>
+        <item>Pobarvane celice se nikoli ne dotikajo ob straneh (koti so v redu).</item>
+        <item>Vse bele celice ostanejo povezane v eno skupino.</item>
+        <item>Pobarvaj le število, ki se ponovi v svoji vrstici ali stolpcu.</item>
+        <item>Nasvet: od dveh enakih sosednjih števil je eno pobarvano, zato so pobarvane tudi vse druge kopije v tej vrstici ali stolpcu.</item>
+        <item>Nasvet: pri vzorcu 3 5 3 srednje število ostane belo.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_nurikabe">
+        <item>Vsako število je otok: toliko belih celic, združenih ob straneh, vključno s številom.</item>
+        <item>Vsak otok ima natanko eno število in otoki se nikoli ne dotikajo ob straneh.</item>
+        <item>Vse druge celice so morje. Pobarvaj jih: morje je ena povezana skupina.</item>
+        <item>Morje nikoli ne tvori polnega bloka 2×2.</item>
+        <item>Nasvet: celica med dvema oštevilčenima otokoma mora biti morje.</item>
+        <item>Nasvet: otok, ki ima vse svoje celice, obdaja morje.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_classic">
+        <item>Vsako prazno celico izpolni s števko od 1 do 9.</item>
+        <item>Vsaka vrstica, vsak stolpec in vsak kvadrat 3×3 mora vsebovati vsako števko natanko enkrat.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_jigsaw">
+        <item>Vsako prazno celico izpolni s števko od 1 do 9.</item>
+        <item>Vsaka vrstica, vsak stolpec in vsako od devetih debelo obrobljenih območij mora vsebovati vsako števko natanko enkrat.</item>
+        <item>Območja so nepravilne oblike z devetimi celicami namesto kvadratov 3×3.</item>
+        <item>Nasvet: območje je pogosto dolgo in tanko, zato lahko mesto števke v njem določita vrstica ali stolpec.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_suguru">
+        <item>Debele črte razdelijo mrežo na območja z 1 do 5 celicami.</item>
+        <item>Območje s k celicami vsebuje števke od 1 do k, vsako natanko enkrat.</item>
+        <item>Ista števka se ne sme pojaviti v dveh celicah, ki se dotikata, niti diagonalno.</item>
+        <item>Nasvet: v območju z dvema celicama ob 1 je druga celica pogosto določena; poglej sosede vsake celice.</item>
+        <item>Nasvet: če števka lahko stoji samo v celicah, ki se vse dotikajo ene zunanje celice, ta celica te števke ne more vsebovati.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_killer">
+        <item>Veljajo vsa pravila sudokuja: vsaka vrstica, stolpec in kvadrat 3×3 vsebuje števke od 1 do 9 po enkrat.</item>
+        <item>Črtkane obrobe so kletke. Majhno število v kotu kletke je vsota njenih števk.</item>
+        <item>Števka se znotraj kletke ne sme ponoviti.</item>
+        <item>Težje stopnje imajo večje kletke in malo začetnih števil ali nobenega.</item>
+        <item>Nasvet: vsaka vrstica, stolpec in kvadrat se seštejejo v 45, zato lahko pogosto izračunaš celico, ki štrli iz kvadrata.</item>
+        <item>Nasvet: nekatere vsote imajo le eno kombinacijo, na primer 3 v dveh celicah je 1 + 2, 17 v dveh celicah pa 8 + 9.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_kakuro">
+        <item>Bele celice izpolni s števkami od 1 do 9.</item>
+        <item>Niz je neprekinjena črta belih celic, vodoravno ali navpično. Njegova oznaka je v temnem polju tik pred njim.</item>
+        <item>V temnem polju je število zgoraj desno vsota niza na desni, število spodaj levo pa vsota niza pod njim.</item>
+        <item>Števka se znotraj niza ne sme ponoviti, drugje v vrstici ali stolpcu pa se lahko.</item>
+        <item>Nasvet: poišči vsote z eno samo kombinacijo: 3 = 1 + 2, 4 = 1 + 3, 16 = 7 + 9, 17 = 8 + 9 v dveh celicah; 6 = 1 + 2 + 3 in 24 = 7 + 8 + 9 v treh.</item>
+        <item>Nekatere uganke se začnejo z nekaj že vpisanimi števkami.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_nonogram">
+        <item>Pobarvaj celice in razkrij skrito sliko.</item>
+        <item>Števila ob vsaki vrstici in nad vsakim stolpcem so dolžine njenih nizov pobarvanih celic, po vrsti.</item>
+        <item>Nize loči vsaj ena prazna celica. „3 1“ pomeni niz treh, vrzel in nato eno samo celico.</item>
+        <item>Vrstice in stolpci z oznako 0 ostanejo prazni. Oznaka zbledi, ko ji vrstica ali stolpec ustreza.</item>
+        <item>Nasvet: v vrstici z 10 celicami niz 7 vedno pokrije srednje 4 celice, ne glede na to, kje stoji.</item>
+        <item>Vsako sliko je mogoče izračunati po eno vrstico ali stolpec naenkrat, brez ugibanja.</item>
+    </string-array>
+    <string name="title_kropki">Kropki</string>
+    <string name="blurb_kropki">Številski kvadrat z belimi in črnimi pikami</string>
+    <string name="summary_kropki">Številski kvadrat, kjer pike med celicami kažejo zaporedni ali dvojni števili.</string>
+    <string name="rule_kropki">Vsaka vrstica in stolpec vsebuje števila od 1 do %1$d po enkrat · bela pika: zaporedni · črna pika: dvojno · brez pike: nič od tega</string>
+    <string-array name="rules_kropki">
+        <item>V mreži n×n celic vpiši števila od 1 do n tako, da vsaka vrstica in stolpec vsebuje vsako števko enkrat. Kvadratov ni.</item>
+        <item>Bela pika med dvema celicama pomeni, da sta števki zaporedni, na primer 3 in 4. Črna pika pomeni, da je ena števka dvakratnik druge, na primer 3 in 6.</item>
+        <item>Vse pike so narisane: sosedi brez pike nista niti zaporedni niti eno dvakratnik drugega. Za 1 in 2 je vedno bela pika.</item>
+        <item>Nasvet: 1 se nikoli ne dotika črne pike, ker bi njen dvakratnik 2 dobil belo piko. Števka nad n ÷ 2 ob črni piki je tista večja.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_futoshiki">
+        <item>V mreži n×n celic vpiši števila od 1 do n tako, da vsaka vrstica in stolpec vsebuje vsako števko enkrat. Kvadratov ni.</item>
+        <item>Znak &lt; ali &gt; med dvema celicama mora držati: kaže na manjšo števko.</item>
+        <item>Nasvet: celica, ki je večja od soseda, ne more biti 1; celica, ki je manjša od druge, ne more biti n.</item>
+        <item>Nasvet: sledi verigam znakov. Pri a &lt; b &lt; c je a največ n − 2, c pa vsaj 3.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_calcudoku">
+        <item>V mreži n×n celic vpiši števila od 1 do n tako, da vsaka vrstica in stolpec vsebuje vsako števko enkrat.</item>
+        <item>Debele obrobe so kletke. Oznaka v kotu kletke pove cilj in računsko operacijo: + vsota, − razlika, × zmnožek, ÷ količnik.</item>
+        <item>Kletki − in ÷ imata dve celici: od večje števke odštej manjšo (ali večjo deli z manjšo).</item>
+        <item>Kletka samo s številom je ena celica s tem številom.</item>
+        <item>Števka se lahko znotraj kletke ponovi, če so kopije v različnih vrsticah in stolpcih.</item>
+        <item>Nasvet: začni z enojnimi celicami in kletkami z malo možnostmi, kot sta 2÷ ali velika razlika −.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+    <string-array name="rules_skyscrapers">
+        <item>V mreži n×n celic vpiši števila od 1 do n tako, da vsaka vrstica in stolpec vsebuje vsako števko enkrat.</item>
+        <item>Vsaka števka je višina stavbe. Višje stavbe skrijejo nižje za seboj.</item>
+        <item>Število zunaj mreže pove, koliko stavb vidiš, če gledaš vzdolž te vrstice ali stolpca s te strani.</item>
+        <item>Nasvet: oznaka 1 pomeni, da najvišja stavba (n) stoji tik ob njej.</item>
+        <item>Nasvet: oznaka n pomeni, da se vrstica od nje dviga 1, 2, 3 … n.</item>
+        <item>Nekatere uganke se začnejo z nekaj že vpisanimi števkami.</item>
+        <item>Vsaka uganka ima natanko eno rešitev in jo je mogoče rešiti z logiko, brez ugibanja.</item>
+    </string-array>
+
+    <!-- Controls (bullets) -->
+    <string-array name="controls_hidato">
+        <item>Tapni celico, nato na tipkovnici vtipkaj njeno število. Števka, ki ne more začeti večjega števila, se vpiše takoj; sicer vtipkaj drugo števko ali malo počakaj.</item>
+        <item>S pisalom (S Pen, Boox): napiši število v celico, eno ali dve števki.</item>
+        <item>Napiši 0, da izbrišeš celico. Ponovno tapni isto število, da ga odstraniš.</item>
+        <item>Tapni število, da označiš števili pred njim in za njim. Črte povezujejo števila, ki si sledijo.</item>
+        <item>Vrstica pod tipkovnico našteje števila, ki jih je še treba postaviti.</item>
+    </string-array>
+    <string-array name="controls_masyu">
+        <item>Tapni med dvema celicama, da tam narišeš črto; ponovno tapni, da jo odstraniš.</item>
+        <item>Ali povleci od celice do celice in z enim potegom nariši več črt. Če začneš na črti, namesto tega briše.</item>
+        <item>Preklopi na „Prečrtaj“, da postaviš ✕ na stranice, za katere veš, da jih zanka ne uporablja. Oznake ✕ so neobvezne.</item>
+        <item>Biser zbledi, ko ga tvoje črte izpolnjujejo; ko so napake vidne, pordeči, če tvoje črte kršijo njegovo pravilo.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+        <string-array name="controls_slitherlink">
+        <item>Tapni med dvema pikama, da tam narišeš črto; ponovno tapni, da jo odstraniš.</item>
+        <item>Ali povleci od pike do pike in z enim potegom nariši več črt. Če začneš na črti, namesto tega briše.</item>
+        <item>Preklopi na „Prečrtaj“, da postaviš ✕ na stranice, za katere veš, da jih zanka ne uporablja. Oznake ✕ so neobvezne.</item>
+        <item>Število zbledi, ko ima pravo število črt (0, ko so vse štiri stranice prečrtane); pordeči, če jih ima preveč.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="controls_shade_tap_star_battle">Tapni celico, da postaviš zvezdo; ponovno tapni, da jo odstraniš.</string>
+    <string name="controls_shade_tap_hitori">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš.</string>
+    <string name="controls_shade_tap_takuzu">Tapni celico za črn krogec; ponovno tapni, da jo počistiš.</string>
+    <string name="controls_shade_tap_mosaic">Tapni celico, da jo pobarvaš; ponovno tapni, da jo počistiš.</string>
+    <string name="controls_shade_tap_nurikabe">Tapni celico, da jo pobarvaš kot morje; ponovno tapni, da jo počistiš.</string>
+    <string name="controls_shade_mode_star_battle">Preklopi na „Označi prazno“, da postaviš piko na celice brez zvezde. Pravilna zvezda sama označi vseh osem sosednjih celic.</string>
+    <string name="controls_shade_mode_hitori">Preklopi na „Označi belo“, da obkrožiš števila, za katera veš, da ostanejo bela.</string>
+    <string name="controls_shade_mode_takuzu">Preklopi na „Bela“ za bele krogce.</string>
+    <string name="controls_shade_mode_mosaic">Preklopi na „Označi belo“, da obkrožiš celice, za katere veš, da ostanejo bele.</string>
+    <string name="controls_shade_mode_nurikabe">Preklopi na „Otok“, da postaviš piko na celice, za katere veš, da so kopno.</string>
+    <string name="controls_shade_drag">Povleci po vrstici ali stolpcu, da označiš več celic naenkrat. Deluje s prstom ali s pisalom.</string>
+    <string name="controls_shade_last_takuzu">Uganka je rešena, ko ima vsaka celica krogec. Ko so napake vidne, se napačna oznaka pokaže rdeče.</string>
+    <string name="controls_shade_last_mosaic">Število posivi, ko je njegov blok popoln: prave celice so pobarvane, ostale obkrožene. Ko so napake vidne, se napačna oznaka pokaže rdeče.</string>
+    <string name="controls_shade_last_default">Pike in krogci so neobvezni, le pomagajo ti pri razmišljanju. Ko so napake vidne, se napačna oznaka pokaže rdeče.</string>
+    <string-array name="controls_nonogram">
+        <item>Tapni celico, da jo pobarvaš. Tapni pobarvano celico, da jo počistiš.</item>
+        <item>Povleci po vrstici ali stolpcu, da pobarvaš več celic naenkrat.</item>
+        <item>Preklopi na „Označi prazno“, da postaviš ✕ na celice, za katere veš, da ostanejo prazne. Oznake ✕ so neobvezne, le pomagajo ti pri razmišljanju.</item>
+        <item>Deluje enako s prstom ali s pisalom.</item>
+    </string-array>
+    <string name="controls_digits_first_latin">Tapni celico, nato tapni število od 1 do n. Ponovno tapni isto število, da ga odstraniš.</string>
+    <string name="controls_digits_first">Tapni celico, nato tapni število. Ponovno tapni isto število, da ga odstraniš.</string>
+    <string-array name="controls_digits">
+        <item>Beležke: vklopi Beležke in tapaj števila, da s svinčnikom vpišeš kandidate.</item>
+        <item>S pisalom (S Pen, Boox): napiši števko veliko za odgovor ali majhno za beležko.</item>
+        <item>Ponovno napiši majhno števko beležke, da jo odstraniš.</item>
+        <item>Napiši 0, da izbrišeš celico; v prazni celici velika 0 izbriše vse njene beležke, majhna 0 pa samo najbližjo beležko.</item>
+        <item>Če je števka napačno prebrana, tapni pravo število in aplikacija se nauči tvojega rokopisa.</item>
+    </string-array>
+
+    <!-- Hints and time (bullets) -->
+    <string-array name="scoring_points">
+        <item>Namig, prvi pritisk: celica, ki jo lahko izračunaš naslednjo, je obrobljena (½ točke).</item>
+        <item>Namig, drugi pritisk: pokaže se njen odgovor (še ½ točke).</item>
+        <item>V nastavitvah lahko omejiš število namigov na igro. Omejitev šteje prve pritiske; obrobljeno celico lahko vedno razkriješ. Spremembe veljajo od naslednje igre.</item>
+        <item>V nastavitvah lahko določiš, da vsak naslednji namig stane več: prvi namig stane ½ točke na pritisk, drugi 1, tretji 1½ …</item>
+        <item>V nastavitvah lahko dodaš premor med namigi, ki se šteje v čas igranja.</item>
+        <item>Čista rešitev je zmaga brez kakršnega koli namiga. Statistika jih šteje in prikaže tvoj najboljši čas čistih rešitev.</item>
+        <item>Brez pomoči: rešeno brez namigov in s skritimi napakami v celotni igri – prikazano ločeno v Statistiki.</item>
+        <item>Vsaka napaka je ½ točke. Napačen vnos je prikazan rdeče, dokler ga ne popraviš.</item>
+        <item>„Napake skrite“ skrije napačne vnose in med vklopom ne šteje napak. Ko spet izbereš „Napake vidne“, se vsak napačen vnos, ki je takrat na plošči, šteje kot napaka. Izbira se pomni za vsako težavnost posebej.</item>
+        <item>Gumb za premor ustavi uro in skrije ploščo. Igra se ustavi tudi, ko zapustiš aplikacijo ali zakleneš zaslon.</item>
+    </string-array>
+    <string name="scoring_penalty_off">Časovna kazen je izklopljena, zato točke ne spremenijo tvojega končnega časa. Vklopiš jo lahko v nastavitvah.</string>
+    <string name="scoring_penalty_on">Na koncu vsaka točka končnemu času prišteje %1$d %% tvojega časa igranja. To lahko spremeniš v nastavitvah.</string>
+</resources>
