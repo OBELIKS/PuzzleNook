@@ -21,6 +21,10 @@ import kotlin.random.Random
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on every unfinished region
  *   (each placement of its missing shaded cells) and on single cells, settle what all
  *   non-contradicting options share.
+ *
+ * Marks: shaded = FILLED; regions are drawn with thick borders. `NorinoriGenerator` builds the dominoes first, then
+ * regions around them; `givens` are the revealed cells (`minGivens` is the floor). `ShadeState.norinoriClash`
+ * shows red from the player's own marks (errors on only).
  */
 class NorinoriLogic(private val n: Int, private val regions: IntArray, private val level: Int) {
     private val cells = n * n

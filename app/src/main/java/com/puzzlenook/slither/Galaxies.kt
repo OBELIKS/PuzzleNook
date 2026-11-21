@@ -333,6 +333,10 @@ class GalaxiesLogic(private val gg: GalaxyGrid, private val level: Int) {
 /** [dots] are half-grid points (see [GalaxyGrid]); [solution] marks the wall edges of `SlitherGrid(n)`, outer border included. */
 class GalaxiesPuzzle(val difficulty: Difficulty, val n: Int, val dots: IntArray, val solution: BooleanArray)
 
+/**
+ * Galaxies (home section "Regions"): splits the board into symmetric galaxies, peels cells off until the level
+ * solves, then merges neighbouring galaxies while it still does.
+ */
 object GalaxiesGenerator {
     fun size(d: Difficulty) = intArrayOf(5, 7, 9, 10)[d.ordinal]
 

@@ -280,6 +280,7 @@ class MasyuLogic(private val mg: MasyuGrid, private val pearls: IntArray, privat
 /** [pearls]: [NO_PEARL], [WHITE_PEARL] or [BLACK_PEARL] for each of the n×n cells; [solution] marks the loop's edges of `SlitherGrid(n - 1)`. */
 class MasyuPuzzle(val difficulty: Difficulty, val n: Int, val pearls: IntArray, val solution: BooleanArray)
 
+/** Hill-climbs a blob loop until the full pearl set solves, then removes pearls (down to [minClues]). */
 object MasyuGenerator {
     fun size(d: Difficulty) = intArrayOf(6, 8, 10, 12)[d.ordinal]
 

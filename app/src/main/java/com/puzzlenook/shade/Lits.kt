@@ -71,6 +71,8 @@ internal object Tetromino {
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on every region with several
  *   placements left (one option per placement) and on single cells, settle what all non-contradicting
  *   options share.
+ *
+ * `Tetromino` holds shape ids and placements; `ShadeState.litsClash` flags clashes from the player's own marks.
  */
 class LitsLogic(private val n: Int, private val regions: IntArray, private val level: Int) {
     private val cells = n * n

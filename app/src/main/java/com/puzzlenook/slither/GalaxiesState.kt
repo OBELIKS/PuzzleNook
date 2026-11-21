@@ -12,7 +12,8 @@ import com.puzzlenook.sudoku.GameState
 /**
  * A Galaxies game in progress. Marks are per edge of `SlitherGrid(n)`: [Mark.FILLED] is a wall, [Mark.CROSSED]
  * an ✕ ("no wall", optional). The outer border is a fixed wall from the start. A wall where the solution has
- * none, or an ✕ where it has one, is a mistake.
+ * none, or an ✕ where it has one, is a mistake. Finished galaxies are tinted from the player's walls only. Board:
+ * `ui/slither/GalaxiesBoard.kt` on `edgeGestures`; tests `GalaxiesTest`, `GalaxiesStateTest`.
  */
 data class GalaxiesState(
     val difficulty: Difficulty,

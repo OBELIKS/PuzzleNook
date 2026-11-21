@@ -12,7 +12,8 @@ import com.puzzlenook.sudoku.Variant
 /**
  * A Star Battle, Hitori, Nurikabe, Takuzu, Mosaic, Light Up, Tents, Kurodoko, Norinori, Battleships, Aquarium, Heyawake or LITS game in progress.
  * [Mark.FILLED] is a star, a shaded cell, a bulb or a tent, [Mark.CROSSED] a cell you've marked as empty / white. Like nonograms, a wrong mark is
- * a mistake (½ point) and stays visible until you change it; marking empty cells is optional.
+ * a mistake (½ point) and stays visible until you change it; marking empty cells is optional. Also owns the saved-game
+ * `toJson`/`fromJson`.
  */
 data class ShadeState(
     val variant: Variant,

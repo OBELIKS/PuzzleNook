@@ -2,7 +2,10 @@ package com.puzzlenook.shade
 
 import com.puzzlenook.sudoku.Variant
 
-/** Plain rule checks and a naive search that share no code with the logic solvers. */
+/**
+ * Plain rule checks and a naive search that share no code with the logic solvers; the independent brute force
+ * for all shade games, Battleships and Aquarium included (Aquarium: levels per tank).
+ */
 object Rules {
     fun valid(p: ShadePuzzle, s: BooleanArray): Boolean {
         val n = p.size

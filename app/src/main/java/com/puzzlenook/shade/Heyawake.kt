@@ -20,6 +20,8 @@ import kotlin.random.Random
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on every numbered room that
  *   still misses shaded cells (each way to place them) and on single cells, settle what all
  *   non-contradicting options share.
+ *
+ * Connectivity uses `anchorCuts` (Shade.kt).
  */
 class HeyawakeLogic(private val n: Int, private val regions: IntArray, numbers: IntArray, private val level: Int) {
     private val cells = n * n

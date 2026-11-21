@@ -30,7 +30,8 @@ private const val MARGIN = 0.1f
 /**
  * Yajilin board: a cell grid, arrow clue cells (grey, with the count), the cells you shade, your dots, and
  * the loop you draw through the cell centres. In Shade mode tap or drag over cells; in Line mode tap near
- * the middle of an edge between two cells, or drag from cell to cell.
+ * the middle of an edge between two cells, or drag from cell to cell (Shade mode uses `CellGestures`, Line mode
+ * `edgeGestures`).
  */
 @Composable
 fun YajilinBoard(

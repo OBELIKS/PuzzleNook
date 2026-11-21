@@ -21,6 +21,10 @@ import kotlin.random.Random
  *   the level 0 steps and counts only a contradiction found within them;
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on every tank (each of its
  *   possible levels) and on single cells, settle what all non-contradicting options share.
+ *
+ * Each tank row is one run of cells; counts work as in Tents (`ShadeState.counts`, margin). `ShadeState.aquariumClash`
+ * flags clashes from the player's own marks. The independent brute force for tests is `Rules` in test
+ * `ShadeRules.kt` (Aquarium: levels per tank).
  */
 class AquariumLogic(private val n: Int, private val regions: IntArray, private val counts: IntArray, private val level: Int) {
     private val cells = n * n

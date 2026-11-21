@@ -36,7 +36,8 @@ import com.puzzlenook.ui.theme.LocalEink
 
 /**
  * The 9×9 grid. Finger taps select cells. With [handwriting] on, a stylus writes ink
- * into [ink] instead (unless [stylusHandledExternally], i.e. the Onyx SDK owns the pen).
+ * into [ink] instead (unless [stylusHandledExternally], i.e. the Onyx SDK owns the pen). For Fillomino it draws
+ * thick lines between touching cells with different shown digits (player data only).
  */
 @OptIn(ExperimentalComposeUiApi::class) // PointerInputChange.historical: full-rate pen samples
 @Composable

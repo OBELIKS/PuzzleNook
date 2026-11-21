@@ -16,6 +16,10 @@ import kotlin.random.Random
  *   level 0 steps and counts only a contradiction found within them;
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on a cell, and on the open
  *   neighbours of a group that has to grow, settle what all non-contradicting options share.
+ *
+ * In the app (home section "Regions"): `GameState` holds no units, peers or regions for Fillomino; hints use this
+ * logic and fall back to higher levels when the chosen level settles nothing; `SudokuBoard` draws thick lines
+ * between touching cells that show different digits (player data only).
  */
 class FillominoLogic(private val n: Int, private val level: Int) {
     private val cells = n * n
@@ -267,7 +271,10 @@ class FillominoLogic(private val n: Int, private val level: Int) {
     }
 }
 
-/** Fillomino puzzles: a random partition into areas, then as few shown digits as the level's logic allows. */
+/**
+ * Fillomino puzzles: a random partition into areas, equal touching areas merged, then the givens thinned as far
+ * as the level's logic allows.
+ */
 object FillominoGenerator {
     fun size(d: Difficulty) = intArrayOf(6, 7, 8, 10)[d.ordinal]
 

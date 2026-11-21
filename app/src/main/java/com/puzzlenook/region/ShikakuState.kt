@@ -10,7 +10,7 @@ import org.json.JSONObject
 /**
  * A Shikaku game in progress. [rects] are the rectangles you drew; [fixed] are the ones a hint
  * revealed (right, locked). A rectangle that isn't part of the solution is a mistake, charged when
- * it is placed (or when errors are shown again, if they were hidden).
+ * it is placed (or when errors are shown again, if they were hidden). `hintClue` is the clue a hint points at.
  */
 data class ShikakuState(
     val difficulty: Difficulty,

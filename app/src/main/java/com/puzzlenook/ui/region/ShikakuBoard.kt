@@ -30,7 +30,7 @@ import com.puzzlenook.ui.theme.LocalEink
 /**
  * Shikaku board: numbers on a grid, the rectangles you drew (outlined, flat light fill). Drag from
  * one cell to another to draw a rectangle (a preview shows while you drag, it is placed when you let
- * go and replaces the rectangles it overlaps); tap inside a rectangle to remove it. Works the same
+ * go and replaces the rectangles it overlaps); tap inside a rectangle to remove it, tap a lone 1 for a single cell. Works the same
  * with a finger or a pen (generic pointer events).
  */
 @Composable

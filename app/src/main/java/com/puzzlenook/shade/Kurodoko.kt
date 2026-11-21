@@ -18,6 +18,8 @@ import kotlin.random.Random
  *   white area can't reach is shaded;
  * - 2: as 1, plus what-if on single cells whose trial uses only the level 0 steps;
  * - 3: as 1, plus what-if on single cells whose trial uses the level 0 and 1 steps.
+ *
+ * Marks: shaded = FILLED. A clue is a blocked white cell; `ShadeState.kurodokoMet` fades it when it is met.
  */
 class KurodokoLogic(private val n: Int, private val numbers: IntArray, private val level: Int) {
     private val cells = n * n

@@ -20,6 +20,11 @@ const val TREE = 1
  *   tree must keep a possible tent of its own (no matching, no puzzle);
  * - 2: as 1, plus what-if on single cells whose trial uses only the level 0 steps;
  * - 3: as 1, plus what-if on single cells whose trial uses the level 0 and 1 steps.
+ *
+ * Marks: tent = FILLED. Trees ([TREE]) are blocked (`ShadeState.isBlocked`). Outside counts live in
+ * `ShadePuzzle.counts` / `ShadeState.counts` (optional JSON "counts"); `ShadeBoard` draws them in a one-cell
+ * margin top and left (the board stays square), taps there do nothing, and a count fades when the player's marks
+ * meet it (`ShadeState.countDone`).
  */
 class TentsLogic(private val n: Int, private val numbers: IntArray, private val counts: IntArray, private val level: Int) {
     private val cells = n * n

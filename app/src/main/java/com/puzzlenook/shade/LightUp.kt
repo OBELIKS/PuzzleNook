@@ -22,6 +22,8 @@ const val WALL = 9
  *   the level 0 steps and counts only a contradiction found within them;
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on a cell, and on every way
  *   to place a numbered wall's missing bulbs, settle what all non-contradicting options share.
+ *
+ * Marks: bulb = FILLED, no bulb = CROSSED. Walls are locked and `ShadeState.isBlocked` makes strokes skip them.
  */
 class LightUpLogic(private val n: Int, private val numbers: IntArray, private val level: Int) {
     private val cells = n * n

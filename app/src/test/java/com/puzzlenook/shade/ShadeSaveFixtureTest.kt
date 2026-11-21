@@ -13,7 +13,8 @@ import java.io.File
  * Regression for shared shade-board changes (blocked cells, outside counts): 3 saved games per
  * older shade variant were recorded in `src/test/resources/shade_saves.txt` (one line each: the
  * saved JSON of the original `ShadeViewModel.persist`, a tab, then every cell's drawing inputs).
- * They must still load, draw from the same inputs and write the same JSON.
+ * They must still load, draw from the same inputs and write the same JSON. The fixture was recorded before
+ * outside `counts` existed: do not regenerate it.
  */
 class ShadeSaveFixtureTest {
     private val variants = listOf(Variant.STAR_BATTLE, Variant.HITORI, Variant.NURIKABE, Variant.TAKUZU, Variant.MOSAIC, Variant.LIGHT_UP)

@@ -260,6 +260,10 @@ class BridgesLogic(private val layout: BridgeLayout, private val level: Int) {
     }
 }
 
+/**
+ * Bridges / Hashi (home section "Lines"): grows islands without crossings and retries until the level's logic
+ * solves; Hard and Expert need their top level.
+ */
 object BridgesGenerator {
     fun size(d: Difficulty) = intArrayOf(7, 9, 11, 13)[d.ordinal]
 

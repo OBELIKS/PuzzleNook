@@ -10,7 +10,8 @@ import org.json.JSONObject
 /**
  * A Bridges game in progress. [bridges] is the count (0..2) you set on every slot of [layout];
  * [fixed] are the slots a hint revealed (right, locked). A slot with more bridges than the solution
- * has is a mistake, charged when it happens (or when errors are shown again, if they were hidden).
+ * has is a mistake, charged when it happens (or when errors are shown again, if they were hidden), so going
+ * 0 -> 1 -> 2 never costs extra.
  */
 data class BridgesState(
     val difficulty: Difficulty,

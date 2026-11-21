@@ -234,6 +234,7 @@ class ShikakuLogic(private val n: Int, numbers: IntArray, private val level: Int
     }
 }
 
+/** Shikaku (home section "Regions"): a random partition, then moves clues until the level's logic solves. */
 object ShikakuGenerator {
     fun size(d: Difficulty) = intArrayOf(6, 8, 10, 12)[d.ordinal]
 

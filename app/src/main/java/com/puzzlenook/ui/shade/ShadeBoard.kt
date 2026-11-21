@@ -44,7 +44,9 @@ import kotlin.math.sin
  * margin), Kurodoko (numbered white cells, shaded cells), Norinori (regions with thick borders,
  * shaded cells), Battleships (ship capsules, outside counts), Aquarium (tanks, water, outside counts),
  * Heyawake (rooms with a number in their first cell, shaded cells) and LITS (regions, shaded cells).
- * Tap or drag to mark.
+ * Outside counts (Tents, Battleships, Aquarium) sit in a one-cell margin at the top and left; the board stays
+ * square and taps in the margin do nothing. A Battleships ship is drawn as capsules joined to its own FILLED
+ * neighbours, and a correct ship dots its diagonals. Tap or drag to mark.
  */
 @Composable
 fun ShadeBoard(

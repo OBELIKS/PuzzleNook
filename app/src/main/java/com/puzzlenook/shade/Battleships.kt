@@ -7,7 +7,8 @@ import kotlin.random.Random
 /**
  * `ShadePuzzle.numbers` of Battleships: `-1` no clue, `0` water, then a ship part that is shown from the
  * start: [SHIP_SINGLE], [SHIP_TOP], [SHIP_BOTTOM], [SHIP_LEFT], [SHIP_RIGHT] (the end where the ship
- * stops, the ship goes on the other way) and [SHIP_MIDDLE]. Shown cells are locked.
+ * stops, the ship goes on the other way) and [SHIP_MIDDLE]. Shown cells are locked but not blocked
+ * (`ShadeState.isBlocked`).
  */
 const val SHIP_SINGLE = 1
 const val SHIP_TOP = 2
@@ -33,6 +34,11 @@ const val SHIP_MIDDLE = 6
  *   the level 0 steps and counts only a contradiction found within them;
  * - 3: as 1, plus branch intersection over the level 1 steps ([branches]): on single cells and on every
  *   way to place a line's missing ship cells, settle what all non-contradicting options share.
+ *
+ * Counts work as in Tents (`ShadeState.counts`, margin). `BattleshipsGenerator.fleet(n)` gives the fleet. A ship is
+ * FILLED and drawn by `ShadeBoard` as capsules joined to its own FILLED neighbours; a correct ship dots its
+ * diagonals. `ShadeState.fleetStatus` feeds the status row (ticks ships closed by own water marks), `shipClash`
+ * flags clashes. The independent brute force for tests is `Rules` in test `ShadeRules.kt`.
  */
 class BattleshipsLogic(
     private val n: Int,

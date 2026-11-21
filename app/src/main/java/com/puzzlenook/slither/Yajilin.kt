@@ -242,6 +242,7 @@ class YajilinLogic(
  */
 class YajilinPuzzle(val difficulty: Difficulty, val n: Int, val clues: IntArray, val shaded: BooleanArray, val loop: BooleanArray)
 
+/** Hill-climbs a blob loop until the clues solve, then turns clue cells into shaded ones. */
 object YajilinGenerator {
     fun size(d: Difficulty) = intArrayOf(6, 7, 8, 10)[d.ordinal]
 
